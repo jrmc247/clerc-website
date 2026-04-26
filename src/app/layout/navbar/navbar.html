@@ -1,0 +1,55 @@
+@let current = theme.current();
+
+<nav class="nav">
+  <a class="nav-logo" routerLink="/" aria-label="CLERC AG — Startseite">
+    CLERC <sub>AG</sub>
+  </a>
+
+  <span class="nav-divider" aria-hidden="true"></span>
+
+  <div class="switcher" role="tablist" aria-label="Fachbereich wählen">
+    <a
+      class="sw-btn"
+      [class.active]="current === 'home'"
+      routerLink="/"
+      role="tab"
+      [attr.aria-selected]="current === 'home'"
+    >
+      Gruppe
+    </a>
+    <a
+      class="sw-btn bau"
+      [class.active]="current === 'bau'"
+      [routerLink]="divisions.bau.route"
+      role="tab"
+      [attr.aria-selected]="current === 'bau'"
+    >
+      bau
+    </a>
+    <a
+      class="sw-btn beton"
+      [class.active]="current === 'beton'"
+      [routerLink]="divisions.beton.route"
+      role="tab"
+      [attr.aria-selected]="current === 'beton'"
+    >
+      beton-trenn
+    </a>
+    <a
+      class="sw-btn heim"
+      [class.active]="current === 'heim'"
+      [routerLink]="divisions.heim.route"
+      role="tab"
+      [attr.aria-selected]="current === 'heim'"
+    >
+      eigenheim
+    </a>
+  </div>
+
+  <div class="nav-links">
+    <a href="#angebot">Angebot</a>
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#stellen">Stellen</a>
+  </div>
+</nav>

@@ -1,0 +1,98 @@
+:host {
+  display: block;
+}
+
+.nav {
+  background: var(--c-primary);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 56px;
+  gap: 0;
+  transition: background var(--transition);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin-right: 12px;
+
+  sub {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    letter-spacing: 0;
+    vertical-align: baseline;
+    margin-left: 3px;
+  }
+}
+
+.nav-divider {
+  width: 0.5px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 12px;
+}
+
+.switcher {
+  display: flex;
+  gap: 4px;
+}
+
+.sw-btn {
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  transition: all 0.25s;
+  white-space: nowrap;
+
+  &:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &.active {
+    color: #fff;
+    border-color: transparent;
+  }
+
+  &.active.bau   { background: var(--c-bau); }
+  &.active.beton { background: var(--c-beton); }
+  &.active.heim  { background: var(--c-heim); }
+}
+
+.sw-btn:not([class*='bau']):not([class*='beton']):not([class*='heim']).active {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+
+  a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.95);
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+}
