@@ -1,0 +1,74 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  /* reserve enough room for the widest state ("CLERC AG" text) so the layout
+     doesn't reflow when switching divisions */
+  width: 130px;
+  height: 56px;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.32s ease, transform 0.32s ease;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.layer-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1.5px;
+
+  sub {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    letter-spacing: 0;
+    vertical-align: baseline;
+    margin-left: 3px;
+  }
+}
+
+.layer-image img {
+  display: block;
+  height: 52px;
+  width: auto;
+  /* the SVGs include a thin colored stroke around the grey panel — let it sit
+     on the dark nav as a small "brand stamp" */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer {
+    transition: opacity 0.15s linear;
+    transform: none;
+  }
+}

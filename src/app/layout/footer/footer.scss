@@ -3,7 +3,6 @@
 }
 
 .footer {
-  background: #111;
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
@@ -14,7 +13,7 @@
   p {
     margin: 0;
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--color-text-secondary);
   }
 }
 

@@ -1,0 +1,16 @@
+<section id="fachbereiche" class="landing-cards">
+  @for (card of cards; track card.key) {
+    @let div = divisions[card.key];
+    <a class="lc" [class]="'lc-' + card.key" [routerLink]="div.route">
+      <span class="lc-stripe"></span>
+      <div class="lc-name">{{ div.fullName }}</div>
+      <div class="lc-sub">{{ div.tagline }}</div>
+      <ul class="lc-services">
+        @for (s of card.services; track s) {
+          <li>{{ s }}</li>
+        }
+      </ul>
+      <div class="lc-cta">Zur Seite <span class="lc-arrow">→</span></div>
+    </a>
+  }
+</section>

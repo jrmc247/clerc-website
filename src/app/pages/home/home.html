@@ -3,49 +3,30 @@
   <div class="hero-eyebrow">
     Clerc AG · Düdingen · Seit 1947 — <span class="accent">Drei Fachbereiche</span>
   </div>
-  <h1>Planen.<br>Bauen.<br>Realisieren.</h1>
+  <h1>Planen.<br />Bauen.<br />Realisieren.</h1>
   <p class="slogan"><em>...</em>Ihre Partner am Bau</p>
   <p class="lead">
-    Seit 77 Jahren realisieren wir hochwertige Bauprojekte im Freiburgerland — von der Planung
-    bis zur Übergabe, über drei spezialisierte Fachbetriebe.
+    Seit 77 Jahren realisieren wir hochwertige Bauprojekte im Freiburgerland — von der Planung bis
+    zur Übergabe, über drei spezialisierte Fachbetriebe.
   </p>
   <div class="hero-ctas">
     <a class="btn-primary" href="#fachbereiche">Bereich wählen</a>
     <a class="btn-ghost" href="#kontakt">Kontakt</a>
   </div>
   <div class="hero-stats">
-    <div><div class="num">77</div><div class="lbl">Jahre Erfahrung</div></div>
-    <div><div class="num">3</div><div class="lbl">Fachbereiche</div></div>
-    <div><div class="num accent">30+</div><div class="lbl">Mitarbeitende</div></div>
+    <div>
+      <div class="num">77</div>
+      <div class="lbl">Jahre Erfahrung</div>
+    </div>
+    <div>
+      <div class="num">3</div>
+      <div class="lbl">Fachbereiche</div>
+    </div>
+    <div>
+      <div class="num">30+</div>
+      <div class="lbl">Mitarbeitende</div>
+    </div>
   </div>
 </section>
-
-<section id="fachbereiche" class="landing-cards">
-  @for (card of cards; track card.key) {
-    @let div = divisions[card.key];
-    <a class="lc" [class]="'lc-' + card.key" [routerLink]="div.route">
-      <span class="lc-stripe"></span>
-      <div class="lc-name">{{ div.fullName }}</div>
-      <div class="lc-sub">{{ div.tagline }}</div>
-      <ul class="lc-services">
-        @for (s of card.services; track s) {
-          <li>{{ s }}</li>
-        }
-      </ul>
-      <div class="lc-cta">Zur Seite <span class="lc-arrow">→</span></div>
-    </a>
-  }
-</section>
-
-<section class="history">
-  <div class="history-eyebrow">Unsere Geschichte</div>
-  <ol class="timeline">
-    @for (m of milestones; track m.year; let last = $last) {
-      <li class="milestone" [class.last]="last">
-        <span class="dot" [style.background]="m.color"></span>
-        <span class="year">{{ m.year }}</span>
-        <span class="label">{{ m.label }}</span>
-      </li>
-    }
-  </ol>
-</section>
+<app-cards></app-cards>
+<app-history></app-history>

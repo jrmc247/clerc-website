@@ -1,8 +1,10 @@
 :host {
   display: block;
   min-height: 100dvh;
-  background: var(--color-background-primary);
-  color: var(--color-text-primary);
+}
+
+.top {
+  background: var(--c-primary);
 }
 
 .site {

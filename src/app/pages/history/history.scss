@@ -1,0 +1,78 @@
+
+/* === HISTORY === */
+.history {
+  padding: 28px 24px 40px;
+  border-top: 0.5px solid var(--color-border-tertiary);
+  background: var(--color-background-secondary);
+}
+
+.history-eyebrow {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 18px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.milestone {
+  text-align: center;
+  position: relative;
+  padding: 0 6px;
+
+  .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+    display: block;
+  }
+
+  .year {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .label {
+    display: block;
+    font-size: 10px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+  }
+
+  &:not(.last)::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    right: -50%;
+    height: 0.5px;
+    background: var(--color-border-secondary);
+  }
+}
+
+@media (max-width: 720px) {
+  .landing-cards {
+    grid-template-columns: 1fr;
+  }
+  .lc {
+    border-right: none;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+  }
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .milestone:not(.last)::after {
+    display: none;
+  }
+}

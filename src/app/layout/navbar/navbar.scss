@@ -3,33 +3,19 @@
 }
 
 .nav {
-  background: var(--c-primary);
   display: flex;
   align-items: center;
   padding: 0 24px;
-  height: 56px;
+  height: 68px;
   gap: 0;
-  transition: background var(--transition);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .nav-logo {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 1.5px;
   margin-right: 12px;
-
-  sub {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 400;
-    letter-spacing: 0;
-    vertical-align: baseline;
-    margin-left: 3px;
-  }
+  flex-shrink: 0;
 }
 
 .nav-divider {

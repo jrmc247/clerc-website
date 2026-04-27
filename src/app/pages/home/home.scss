@@ -4,12 +4,9 @@
 
 /* === HERO === */
 .hero {
-  background: var(--c-primary);
-  color: #fff;
   padding: 56px 28px 44px;
   position: relative;
   overflow: hidden;
-  transition: background var(--transition);
 }
 
 .hero-bg-text {
@@ -33,7 +30,6 @@
 
   .accent {
     color: var(--c-accent);
-    transition: color var(--transition);
   }
 }
 
@@ -55,7 +51,6 @@ h1 {
   em {
     color: var(--c-accent);
     font-style: normal;
-    transition: color var(--transition);
   }
 }
 
@@ -81,14 +76,15 @@ h1 {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  transition: transform 0.15s, background var(--transition), border-color 0.2s, color 0.2s;
 }
 
 .btn-primary {
   background: var(--c-accent);
   color: #fff;
 
-  &:hover { transform: translateY(-1px); }
+  &:hover {
+    transform: translateY(-1px);
+  }
 }
 
 .btn-ghost {
@@ -122,173 +118,4 @@ h1 {
     color: rgba(255, 255, 255, 0.35);
     margin-top: 2px;
   }
-}
-
-/* === LANDING CARDS === */
-.landing-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.lc {
-  position: relative;
-  padding: 32px 24px;
-  border-right: 0.5px solid var(--color-border-tertiary);
-  transition: background 0.2s;
-  display: block;
-  overflow: hidden;
-  color: var(--color-text-primary);
-
-  &:last-child { border-right: none; }
-
-  &:hover { background: var(--color-background-secondary); }
-}
-
-.lc-stripe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  transition: height 0.2s;
-}
-
-.lc:hover .lc-stripe { height: 5px; }
-
-.lc-bau   .lc-stripe { background: var(--c-bau); }
-.lc-beton .lc-stripe { background: var(--c-beton); }
-.lc-heim  .lc-stripe { background: var(--c-heim); }
-
-.lc-name {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--color-text-primary);
-}
-
-.lc-sub {
-  font-size: 12px;
-  color: var(--color-text-secondary);
-  margin-top: 4px;
-}
-
-.lc-services {
-  margin: 16px 0 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-
-  li {
-    font-size: 12px;
-    color: var(--color-text-secondary);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    &::before {
-      content: '';
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      background: currentColor;
-      opacity: 0.4;
-    }
-  }
-}
-
-.lc-cta {
-  margin-top: 18px;
-  font-size: 12px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.lc-bau   .lc-cta { color: var(--c-bau); }
-.lc-beton .lc-cta { color: var(--c-beton); }
-.lc-heim  .lc-cta { color: var(--c-heim); }
-
-.lc-arrow {
-  transition: transform 0.2s;
-}
-
-.lc:hover .lc-arrow { transform: translateX(4px); }
-
-/* === HISTORY === */
-.history {
-  padding: 28px 24px 40px;
-  border-top: 0.5px solid var(--color-border-tertiary);
-  background: var(--color-background-secondary);
-}
-
-.history-eyebrow {
-  font-size: 11px;
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 18px;
-}
-
-.timeline {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.milestone {
-  text-align: center;
-  position: relative;
-  padding: 0 6px;
-
-  .dot {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin: 0 auto 8px;
-    display: block;
-  }
-
-  .year {
-    display: block;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--color-text-primary);
-  }
-
-  .label {
-    display: block;
-    font-size: 10px;
-    color: var(--color-text-secondary);
-    margin-top: 2px;
-  }
-
-  &:not(.last)::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    right: -50%;
-    height: 0.5px;
-    background: var(--color-border-secondary);
-  }
-}
-
-@media (max-width: 720px) {
-  .landing-cards {
-    grid-template-columns: 1fr;
-  }
-  .lc {
-    border-right: none;
-    border-bottom: 0.5px solid var(--color-border-tertiary);
-  }
-  .timeline {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .milestone:not(.last)::after { display: none; }
 }

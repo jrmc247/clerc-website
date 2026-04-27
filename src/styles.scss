@@ -28,34 +28,40 @@
   --c-accent-light: #f0f0f0;
   --c-accent-mid: #555555;
 
-  /* per-division static colors (used for landing cards & footer tags) */
-  --c-bau: #1a3cb5;
-  --c-bau-light: #e6eeff;
-  --c-beton: #00915e;
-  --c-beton-light: #e0f5ec;
-  --c-heim: #b83225;
-  --c-heim-light: #fdecea;
+  /* per-division static colors — canonical values taken from the brand SVGs.
+     Used wherever all three divisions appear together (landing cards, footer tags). */
+  --c-bau: #11214f;
+  --c-bau-secondary: #213a89; 
+  --c-bau-light: #e6ecf7;
+  --c-beton: #00595c;
+  --c-beton-secondary: #00aaaf;
+  --c-beton-light: #e0f5f6;
+  --c-heim: #6b0e12;
+  --c-heim-secondary: #c4161d;
+  --c-heim-light: #fde6e7;
 
   --transition: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* per-division accent themes — applied on the app root */
+/* per-division accent themes — applied on the app root.
+   Accent matches the brand SVG fill exactly; primary is a darker shade for hero/contact
+   backgrounds. */
 .theme-bau {
-  --c-primary: #0f1f6b;
-  --c-accent: #1a3cb5;
-  --c-accent-light: #e6eeff;
+  --c-primary: #11214f;
+  --c-accent: #213a89;
+  --c-accent-light: #e6ecf7;
 }
 
 .theme-beton {
-  --c-primary: #004d32;
-  --c-accent: #00915e;
-  --c-accent-light: #e0f5ec;
+  --c-primary: #00595c;
+  --c-accent: #00aaaf;
+  --c-accent-light: #e0f5f6;
 }
 
 .theme-heim {
-  --c-primary: #6b1510;
-  --c-accent: #b83225;
-  --c-accent-light: #fdecea;
+  --c-primary: #6b0e12;
+  --c-accent: #c4161d;
+  --c-accent-light: #fde6e7;
 }
 
 * {

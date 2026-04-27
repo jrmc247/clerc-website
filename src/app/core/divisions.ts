@@ -14,6 +14,8 @@ export interface DivisionConfig {
   accent: string;
   /** dark variant (used as hero/contact background on division pages) */
   primary: string;
+  /** path under /public to the brand logo SVG; absent for the Gruppe state */
+  logo?: string;
   /** route path */
   route: string;
 }
@@ -25,8 +27,8 @@ export const DIVISIONS: Record<Division, DivisionConfig> = {
     fullName: 'CLERC AG',
     tagline: 'Drei Fachbereiche',
     themeClass: '',
-    accent: '#1a1a1a',
-    primary: '#1a1a1a',
+    accent: '#6c6c6c',
+    primary: '#d4d4d4',
     route: '/',
   },
   bau: {
@@ -35,8 +37,9 @@ export const DIVISIONS: Record<Division, DivisionConfig> = {
     fullName: 'CLERC bau AG',
     tagline: 'hoch- und tiefbau',
     themeClass: 'theme-bau',
-    accent: '#1a3cb5',
-    primary: '#0f1f6b',
+    accent: '#213a89',
+    primary: '#11214f',
+    logo: 'logos/logo_bau.svg',
     route: '/bau',
   },
   beton: {
@@ -45,8 +48,9 @@ export const DIVISIONS: Record<Division, DivisionConfig> = {
     fullName: 'CLERC beton-trenn AG',
     tagline: 'bohren - schneiden',
     themeClass: 'theme-beton',
-    accent: '#00915e',
-    primary: '#004d32',
+    accent: '#00aaaf',
+    primary: '#00595c',
+    logo: 'logos/logo_beton-trenn.svg',
     route: '/beton-trenn',
   },
   heim: {
@@ -55,8 +59,9 @@ export const DIVISIONS: Record<Division, DivisionConfig> = {
     fullName: 'CLERC eigenheim AG',
     tagline: 'planen - realisieren',
     themeClass: 'theme-heim',
-    accent: '#b83225',
-    primary: '#6b1510',
+    accent: '#c4161d',
+    primary: '#6b0e12',
+    logo: 'logos/logo_eigenheim.svg',
     route: '/eigenheim',
   },
 };

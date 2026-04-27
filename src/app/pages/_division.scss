@@ -7,7 +7,6 @@
 }
 
 .hero {
-  background: var(--c-primary);
   color: #fff;
   padding: 56px 28px 48px;
   position: relative;
@@ -36,7 +35,6 @@
 
   .accent {
     color: var(--c-accent);
-    transition: color var(--transition);
   }
 }
 
@@ -58,7 +56,6 @@ h1 {
   em {
     color: var(--c-accent);
     font-style: normal;
-    transition: color var(--transition);
   }
 }
 
@@ -84,14 +81,15 @@ h1 {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  transition: transform 0.15s, background var(--transition), border-color 0.2s, color 0.2s;
 }
 
 .btn-primary {
   background: var(--c-accent);
   color: #fff;
 
-  &:hover { transform: translateY(-1px); }
+  &:hover {
+    transform: translateY(-1px);
+  }
 }
 
 .btn-ghost {
