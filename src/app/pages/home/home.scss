@@ -7,8 +7,7 @@
   position: relative;
   overflow: hidden;
   background: var(--color-surface-dark);
-  padding: 88px 48px 80px;
-  min-height: 86vh;
+  padding: 220px 48px 80px; /* top: navbar-height + breathing room */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -82,7 +81,7 @@ h1 {
 
 .slogan {
   font-family: var(--font-display);
-  font-style: italic;
+  font-weight: 300;
   font-size: clamp(16px, 2.2vw, 22px);
   color: rgba(255, 255, 255, 0.38);
   margin: 0 0 20px;
@@ -113,7 +112,7 @@ h1 {
   gap: 12px;
   flex-wrap: wrap;
   animation: fade-up 0.7s ease both;
-  animation-delay: 0.48s;
+  animation-delay: 0.44s;
 }
 
 .btn-primary,
@@ -125,7 +124,10 @@ h1 {
   letter-spacing: 0.04em;
   display: inline-flex;
   align-items: center;
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
 }
 
 .btn-primary {
@@ -153,22 +155,18 @@ h1 {
 /* ── Stats strip ───────────────────────────────────────────────────── */
 .hero-stats {
   position: absolute;
-  top: 48px;
   right: 48px;
+  top: 50%;
+  transform: translateY(-75%);
   display: flex;
   flex-direction: column;
   gap: 28px;
-  align-items: flex-end;
   animation: fade-in 1s ease both;
   animation-delay: 0.6s;
 
-  div {
-    text-align: right;
-  }
-
   .num {
     font-family: var(--font-display);
-    font-size: clamp(32px, 4vw, 48px);
+    font-size: clamp(28px, 3.5vw, 42px);
     color: rgba(255, 255, 255, 0.9);
     line-height: 1;
     letter-spacing: -0.02em;
@@ -179,26 +177,19 @@ h1 {
     font-weight: 400;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.25);
-    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.28);
+    margin-top: 5px;
   }
 }
 
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 760px) {
   .hero {
-    padding: 64px 24px 52px;
+    padding: calc(72px + 36px) 24px 52px;
     min-height: 75vh;
   }
 
   .hero-stats {
-    position: static;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 28px;
-    margin-top: 36px;
-    animation-delay: 0.5s;
-
-    div { text-align: left; }
+    display: none;
   }
 }

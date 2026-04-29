@@ -1,0 +1,302 @@
+{
+  "lang": { "de": "DE", "fr": "FR", "it": "IT" },
+
+  "nav": {
+    "switcherLabel": "Scegliere il settore",
+    "links": {
+      "offer": "Prestazioni",
+      "about": "Chi siamo",
+      "contact": "Contatto",
+      "jobs": "Lavoro"
+    },
+    "sub": {
+      "offer":        "Prestazioni",
+      "projects":     "Progetti",
+      "bauland":      "Terreni",
+      "ideenhaeuser": "Case tipo",
+      "financing":    "Finanziamento",
+      "references":   "Referenze",
+      "team":         "Team"
+    }
+  },
+
+  "footer": {
+    "copyright": "© {year} CLERC AG · Düdingen · Friborgo"
+  },
+
+  "common": {
+    "referenzen": {
+      "eyebrow":       "Referenze",
+      "gallery_coming": "Galleria fotografica disponibile a breve."
+    },
+    "contact_cta": "Contattaci"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow":          "Clerc AG · Düdingen · Dal 1947",
+      "eyebrowHighlight": "Tre settori",
+      "h1Line1": "Pianificare.",
+      "h1Line2": "Costruire.",
+      "h1Line3": "Realizzare.",
+      "slogan":     "...I vostri partner nell'edilizia",
+      "lead":       "Da 77 anni realizziamo progetti edilizi di qualità nel canton Friborgo — dalla pianificazione alla consegna delle chiavi, attraverso tre aziende specializzate.",
+      "ctaPrimary": "Scegliere un settore",
+      "ctaGhost":   "Contatto",
+      "stats": {
+        "years":     "anni di esperienza",
+        "divisions": "settori",
+        "staff":     "collaboratori"
+      }
+    }
+  },
+
+  "bau": {
+    "hero": {
+      "h1Line1": "Edilizia",
+      "h1Line2": "civile.",
+      "h1Line3": "Con esperienza.",
+      "slogan":     "...I vostri partner nell'edilizia",
+      "lead":       "Dalle fondamenta al tetto — CLERC bau AG realizza il vostro progetto edilizio con competenza e passione.",
+      "ctaPrimary": "Richiedere un'offerta",
+      "ctaGhost":   "Referenze"
+    },
+    "angebot": {
+      "eyebrow": "Prestazioni",
+      "heading": "Cosa costruiamo per voi",
+      "lead":    "CLERC bau AG è il vostro partner affidabile per l'edilizia civile nel canton Friborgo. Con oltre 75 anni di esperienza, realizziamo progetti di ogni dimensione — nei tempi previsti e a prezzo fisso.",
+      "hochbau": {
+        "label": "Edilizia",
+        "title": "Abitazioni & locali commerciali",
+        "body":  "Nuove costruzioni, case unifamiliari, stabili plurifamiliari ed edifici commerciali. Ci occupiamo dell'intera esecuzione dallo scavo fino alla pulizia finale."
+      },
+      "tiefbau": {
+        "label": "Genio civile",
+        "title": "Fondamenta & infrastrutture",
+        "body":  "Canalizzazioni, strade, posa di condotte e movimenti di terra. Esecuzione precisa anche in condizioni di terreno difficili."
+      },
+      "umbau": {
+        "label": "Ristrutturazioni",
+        "title": "Rinnovare l'esistente",
+        "body":  "Lavori di trasformazione e ristrutturazione con impatto minimo sull'attività in corso. Risanamenti energetici, sopraelevazioni, ampliamenti."
+      },
+      "umgebung": {
+        "label": "Sistemazioni esterne",
+        "title": "Completare l'esterno",
+        "body":  "Muri da giardino, aree di sosta, vialetti, piantumazioni e recinzioni. Progettiamo l'ambiente esterno del vostro edificio in modo globale e duraturo."
+      },
+      "cta": {
+        "text": "Pronti per il vostro progetto edilizio?",
+        "btn":  "Richiesta senza impegno"
+      }
+    },
+    "referenzen": {
+      "heading": "I nostri progetti edilizi",
+      "lead":    "Dalla casa unifamiliare al grande complesso residenziale — una selezione di progetti realizzati da CLERC bau AG nel canton Friborgo."
+    }
+  },
+
+  "beton": {
+    "hero": {
+      "h1Line1": "Forare.",
+      "h1Line2": "Tagliare.",
+      "h1Line3": "Con precisione.",
+      "slogan":     "...I vostri partner nell'edilizia",
+      "lead":       "Carotaggio, taglio a filo, sega a parete — CLERC beton-trenn AG è il vostro specialista per tutti i lavori di taglio del calcestruzzo.",
+      "ctaPrimary": "Richiedere un'offerta",
+      "ctaGhost":   "Referenze"
+    },
+    "angebot": {
+      "eyebrow": "Prestazioni",
+      "heading": "Foratura & taglio con tecnologia diamantata",
+      "lead":    "CLERC beton-trenn AG utilizza la più moderna tecnologia diamantata — per tagli puliti e precisi nel calcestruzzo armato, nella muratura, nell'asfalto e nella pietra naturale. Senza vibrazioni, senza rumore.",
+      "wandsaegen": {
+        "title": "Sega a parete & a catena",
+        "body":  "I materiali da costruzione come il calcestruzzo armato o la muratura vengono tagliati in modo preciso con sega a parete, sega a catena o sega circolare. Ideale per aperture angolari in pareti, soffitti e pavimenti."
+      },
+      "kernbohren": {
+        "title": "Carotaggio",
+        "body":  "Forature precise per condotte d'acqua, ventilazione e tubazioni in ristrutturazione e nuova costruzione. Standard fino a Ø 600 mm, diametri maggiori su richiesta. Profondità fino a 6,00 m già realizzata."
+      },
+      "seilsaegen": {
+        "title": "Taglio a filo diamantato",
+        "body":  "Il taglio con filo diamantato è il metodo più efficace per grandi strutture in acciaio e calcestruzzo. Nessun limite di profondità, tagli circolari possibili — per demolizione e smantellamento."
+      },
+      "bodensaegen": {
+        "title": "Taglio di pavimenti",
+        "body":  "Taglio nei pavimenti in calcestruzzo armato, calcestruzzo, asfalto e pietra naturale. Alta produttività e brevi tempi di allestimento consentono un impiego economico."
+      },
+      "cta": {
+        "text": "Discutere del vostro progetto?",
+        "btn":  "Richiedere ora"
+      }
+    },
+    "referenzen": {
+      "heading": "Referenze taglio calcestruzzo",
+      "lead":    "Carotaggi, tagli a parete e lavori di demolizione — progetti realizzati da CLERC beton-trenn AG."
+    }
+  },
+
+  "heim": {
+    "hero": {
+      "h1Line1": "La vostra casa.",
+      "h1Line2": "Pianificata.",
+      "h1Line3": "Costruita.",
+      "slogan":     "...I vostri partner nell'edilizia",
+      "lead":       "Possedere la propria casa è il sogno più grande. Vi accompagniamo dalla prima idea alla consegna delle chiavi.",
+      "ctaPrimary": "Scoprire la nostra offerta",
+      "ctaGhost":   "Chi siamo"
+    },
+    "angebot": {
+      "eyebrow": "Come funziona",
+      "heading": "Costruire senza rischio — a prezzo fisso",
+      "lead":    "CLERC eigenheim AG è la vostra impresa generale per la costruzione di case unifamiliari nel canton Friborgo. Ci occupiamo di tutto — dal primo schizzo alla consegna delle chiavi — a un prezzo fisso garantito.",
+      "f1": {
+        "title": "Case individuali",
+        "body":  "Le nostre case tipo sono un punto di partenza, non un vincolo. Ogni casa viene adattata ai vostri desideri e alle vostre esigenze — planimetria, finiture, materiali."
+      },
+      "f2": {
+        "title": "Garanzia prezzo fisso",
+        "body":  "Vi proponiamo un contratto d'appalto con descrizione dettagliata dei lavori e prezzo fisso vincolante. Nessun costo nascosto, nessun rischio."
+      },
+      "f3": {
+        "title": "Finanze sotto controllo",
+        "body":  "Calcolo chiaro e preciso, garanzia prezzo fisso ed esecuzione nei tempi previsti. I pagamenti sono scaglionati in base all'avanzamento dei lavori — pagate solo ciò che è stato costruito."
+      },
+      "f4": {
+        "title": "Lavori in proprio possibili",
+        "body":  "Volete contribuire personalmente? I lavori in proprio sono sempre possibili e riducono i costi. Coordiniamo il vostro contributo nel processo costruttivo senza interruzioni."
+      },
+      "included": {
+        "eyebrow": "Incluso nel prezzo fisso",
+        "heading": "Tutto da un'unica fonte"
+      },
+      "includedItems": [
+        "Progetto preliminare & calcolo dei costi",
+        "Domanda & autorizzazione a costruire",
+        "Casa completa incl. garage",
+        "Terreno (su richiesta)",
+        "Tasse & onorari",
+        "Direzione lavori & garanzie SIA",
+        "Lavori preparatori",
+        "IVA"
+      ],
+      "cta": {
+        "text": "Fissare un primo colloquio senza impegno",
+        "btn":  "Richiedere ora"
+      }
+    },
+    "projekte": {
+      "eyebrow": "Progetti attuali",
+      "heading": "Cosa è in costruzione",
+      "lead":    "Residenze e case unifamiliari nella regione di Friborgo — in pianificazione o in realizzazione.",
+      "weitblick": {
+        "desc": "4 edifici residenziali con 12 appartamenti in proprietà a Rechthalten. Edifici A & C: tre appartamenti da 4½ locali ciascuno. Edificio B: tre appartamenti da 3½ locali. Edificio D: tre appartamenti da 5½ locali. Grandi balconi, vista sud-ovest garantita."
+      },
+      "oberimatta": {
+        "desc": "2 edifici (6 appartamenti ciascuno), 2 case (3 appartamenti ciascuno) e 5 case unifamiliari a Brünisried. In totale 18 appartamenti e 6 case, da 4½ a 5½ locali. Posizione tranquilla, finiture di qualità. Prezzi in elaborazione."
+      },
+      "seebacher": {
+        "desc": "4 case unifamiliari con carport a Kleinguschelmuth. Unità A, B e D assegnate. Casa C ancora disponibile."
+      },
+      "cta": {
+        "text": "Interessati? Siamo a vostra disposizione.",
+        "btn":  "Contattare Pascal Tornare"
+      }
+    },
+    "bauland": {
+      "eyebrow": "Terreni edificabili",
+      "heading": "Costruite sul nostro terreno",
+      "lead":    "Particelle selezionate nella regione di Friborgo — con obbligo di costruzione tramite CLERC eigenheim AG.",
+      "beausite":    { "name": "Lottizzazione «beausite»" },
+      "pleinsoleil": { "name": "Lottizzazione «pleine soleil»" },
+      "notice": "L'acquisto di una particella edificabile è possibile solo con obbligo di costruzione tramite CLERC eigenheim AG.",
+      "cta": {
+        "text": "Domande sui terreni edificabili?",
+        "btn":  "Richiedere ora"
+      }
+    },
+    "ideenhaeuser": {
+      "eyebrow":    "Case tipo",
+      "heading":    "21 modelli come punto di partenza",
+      "lead":       "Le nostre case tipo mostrano ciò che è possibile. Scegliete un modello, noi lo adattiamo ai vostri desideri — planimetria, livello di finitura e dimensioni.",
+      "disclaimer": "Tutti i prezzi sono indicativi e variano in base alla posizione, alla topografia e alle dimensioni. Non incluso: garage, terreno, sistemazioni esterne, tasse e spese notarili.",
+      "rooms":      "locali",
+      "custom": {
+        "label": "Soluzione individuale",
+        "title": "Nessun modello soddisfa?",
+        "body":  "Nessun problema — pianifichiamo la vostra casa da zero secondo le vostre idee. Primo colloquio gratuito e stima dei costi senza impegno."
+      },
+      "cta": {
+        "text": "Quale modello vi interessa?",
+        "btn":  "Discutere senza impegno"
+      }
+    },
+    "finanzierung": {
+      "eyebrow": "Finanziamento",
+      "heading": "Il vostro budget — chiaro e sicuro",
+      "lead":    "Costruire la propria casa è un grande investimento. Vi aiutiamo a mantenere la visione d'insieme — con un calcolo chiaro, una garanzia di prezzo fisso e una consulenza personale.",
+      "guarantee": {
+        "label": "Garanzia prezzo fisso",
+        "title": "Nessuna brutta sorpresa",
+        "body":  "Il nostro contratto d'appalto con descrizione dettagliata garantisce un prezzo fisso vincolante. Ciò che è concordato viene costruito — esattamente a quel prezzo."
+      },
+      "stages": {
+        "label": "Piano di pagamento",
+        "title": "Scaglionato secondo l'avanzamento",
+        "body":  "Pagate solo ciò che è stato costruito. I pagamenti avvengono in fasi definite in base all'avanzamento dei lavori — pianificabile e trasparente."
+      },
+      "eigenleistung": {
+        "label": "Lavori in proprio",
+        "title": "Contribuire personalmente fa risparmiare",
+        "body":  "I lavori in proprio sono sempre possibili. Che si tratti di pittura, sistemazione del giardino o altro — il vostro contributo viene calcolato e coordinato."
+      },
+      "costs": {
+        "label": "Spese accessorie",
+        "title": "Tutto calcolato",
+        "body":  "Iscrizione al registro, atti di pegno e interessi sul credito di costruzione di ca. CHF 40'000 sono inclusi nel piano budgetario. Vi mostriamo tutto ciò che vi aspetta."
+      },
+      "cta": {
+        "text": "Vi aiutiamo a chiarire il finanziamento.",
+        "btn":  "Richiedere un appuntamento di consulenza"
+      }
+    },
+    "referenzen": {
+      "heading": "Referenze eigenheim",
+      "lead":    "Case unifamiliari e residenze realizzate nel canton Friborgo — da Wallenried a Gurmels."
+    },
+    "team": {
+      "eyebrow": "Il team",
+      "heading": "Personale. Competente. Affidabile.",
+      "lead":    "Dietro ogni casa ci sono delle persone. Conoscete il team che realizza il vostro sogno.",
+      "rene":   { "name": "René Clerc",     "role": "Direzione" },
+      "pascal": { "name": "Pascal Tornare", "role": "Pianificazione, gestione progetti & direzione lavori" },
+      "company": { "eyebrow": "Contatto diretto" }
+    }
+  },
+
+  "cards": {
+    "cta": "Alla pagina",
+    "bau":   { "services": ["Edilizia", "Genio civile", "Ristrutturazioni", "Sistemazione esterna"] },
+    "beton": { "services": ["Carotaggio", "Taglio a disco", "Taglio a filo", "Demolizione"] },
+    "heim":  { "services": ["Pianificazione", "Nuova costruzione", "Consulenza & pianificazione", "Realizzazione"] }
+  },
+
+  "history": {
+    "eyebrow": "La nostra storia",
+    "milestones": [
+      { "year": "1947",    "label": "Fondazione" },
+      { "year": "1968",    "label": "2ª generazione" },
+      { "year": "anni '80","label": "60 collaboratori" },
+      { "year": "2001",    "label": "3ª generazione" },
+      { "year": "Oggi",    "label": "Digitale & moderno" }
+    ]
+  },
+
+  "divisions": {
+    "home":  { "label": "Gruppo",      "fullName": "CLERC AG",             "tagline": "Tre settori" },
+    "bau":   { "label": "bau",         "fullName": "CLERC bau AG",         "tagline": "edilizia civile" },
+    "beton": { "label": "beton-trenn", "fullName": "CLERC beton-trenn AG", "tagline": "forare - tagliare" },
+    "heim":  { "label": "eigenheim",   "fullName": "CLERC eigenheim AG",   "tagline": "pianificare - realizzare" }
+  }
+}

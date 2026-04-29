@@ -1,0 +1,15 @@
+<div class="sp-wrap">
+  <p class="sp-eyebrow">{{ 'common.referenzen.eyebrow' | translate }}</p>
+  <h2 class="sp-heading">{{ 'heim.referenzen.heading' | translate }}</h2>
+  <p class="sp-lead">{{ 'heim.referenzen.lead' | translate }}</p>
+
+  <div class="locations-grid">
+    @for (loc of locations; track loc) {
+      <div class="location-chip">{{ loc }}</div>
+    }
+  </div>
+
+  <div class="gallery-placeholder">
+    <p>{{ 'common.referenzen.gallery_coming' | translate }}</p>
+  </div>
+</div>

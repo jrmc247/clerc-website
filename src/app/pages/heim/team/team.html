@@ -1,0 +1,35 @@
+<div class="sp-wrap">
+  <p class="sp-eyebrow">{{ 'heim.team.eyebrow' | translate }}</p>
+  <h2 class="sp-heading">{{ 'heim.team.heading' | translate }}</h2>
+  <p class="sp-lead">{{ 'heim.team.lead' | translate }}</p>
+
+  <div class="team-grid">
+    @for (m of members; track m.email) {
+      <div class="team-card">
+        <div class="team-avatar">{{ (m.nameKey | translate).charAt(0) }}</div>
+        <div class="team-info">
+          <div class="team-name">{{ m.nameKey | translate }}</div>
+          <div class="team-role">{{ m.roleKey | translate }}</div>
+          <div class="team-contacts">
+            <a [href]="'tel:' + m.phone">{{ m.phone }}</a>
+            <a [href]="'mailto:' + m.email">{{ m.email }}</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="sp-divider"></div>
+
+  <div class="company-contact">
+    <p class="sp-eyebrow">{{ 'heim.team.company.eyebrow' | translate }}</p>
+    <div class="contact-details">
+      <div>
+        <strong>CLERC eigenheim AG</strong><br>
+        Hauptstrasse 54, 3186 Düdingen<br>
+        <a href="tel:0264925450">026 492 54 50</a><br>
+        <a href="mailto:info@clerc.ch">info@clerc.ch</a>
+      </div>
+    </div>
+  </div>
+</div>

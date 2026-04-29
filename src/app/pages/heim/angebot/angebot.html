@@ -1,0 +1,54 @@
+<div class="sp-wrap">
+  <p class="sp-eyebrow">{{ 'heim.angebot.eyebrow' | translate }}</p>
+  <h2 class="sp-heading">{{ 'heim.angebot.heading' | translate }}</h2>
+  <p class="sp-lead">{{ 'heim.angebot.lead' | translate }}</p>
+
+  <ul class="sp-features">
+    <li class="sp-feature">
+      <span class="sp-feature-icon">🏠</span>
+      <div>
+        <p class="sp-feature-title">{{ 'heim.angebot.f1.title' | translate }}</p>
+        <p class="sp-feature-body">{{ 'heim.angebot.f1.body' | translate }}</p>
+      </div>
+    </li>
+    <li class="sp-feature">
+      <span class="sp-feature-icon">🔒</span>
+      <div>
+        <p class="sp-feature-title">{{ 'heim.angebot.f2.title' | translate }}</p>
+        <p class="sp-feature-body">{{ 'heim.angebot.f2.body' | translate }}</p>
+      </div>
+    </li>
+    <li class="sp-feature">
+      <span class="sp-feature-icon">📊</span>
+      <div>
+        <p class="sp-feature-title">{{ 'heim.angebot.f3.title' | translate }}</p>
+        <p class="sp-feature-body">{{ 'heim.angebot.f3.body' | translate }}</p>
+      </div>
+    </li>
+    <li class="sp-feature">
+      <span class="sp-feature-icon">🛠️</span>
+      <div>
+        <p class="sp-feature-title">{{ 'heim.angebot.f4.title' | translate }}</p>
+        <p class="sp-feature-body">{{ 'heim.angebot.f4.body' | translate }}</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="sp-divider"></div>
+
+  <p class="sp-eyebrow">{{ 'heim.angebot.included.eyebrow' | translate }}</p>
+  <h3 class="sp-heading" style="font-size: clamp(20px, 2.5vw, 28px)">{{ 'heim.angebot.included.heading' | translate }}</h3>
+
+  <div class="sp-grid">
+    @for (item of includedItems; track item) {
+      <div class="sp-card">
+        <p class="sp-card-body">{{ item | translate }}</p>
+      </div>
+    }
+  </div>
+
+  <div class="sp-cta-block">
+    <p>{{ 'heim.angebot.cta.text' | translate }}</p>
+    <a href="mailto:info@clerc.ch">{{ 'heim.angebot.cta.btn' | translate }}</a>
+  </div>
+</div>

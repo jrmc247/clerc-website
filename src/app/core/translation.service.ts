@@ -3,9 +3,9 @@ import { Injectable, PLATFORM_ID, effect, inject, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { firstValueFrom } from 'rxjs';
 
-export type Lang = 'de' | 'fr';
+export type Lang = 'de' | 'fr' | 'it';
 
-const SUPPORTED: Lang[] = ['de', 'fr'];
+const SUPPORTED: Lang[] = ['de', 'fr', 'it'];
 const DEFAULT_LANG: Lang = 'de';
 const STORAGE_KEY = 'clerc_lang';
 
@@ -27,7 +27,8 @@ export class TranslationService {
       const l = this._lang();
       if (this.isBrowser) {
         localStorage.setItem(STORAGE_KEY, l);
-        document.documentElement.lang = l === 'de' ? 'de-CH' : 'fr-CH';
+        const htmlLang: Record<Lang, string> = { de: 'de-CH', fr: 'fr-CH', it: 'it-CH' };
+        document.documentElement.lang = htmlLang[l];
       }
     });
   }

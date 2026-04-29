@@ -1,0 +1,51 @@
+.disclaimer {
+  font-size: 12.5px;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+  margin: -24px 0 36px;
+  line-height: 1.6;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.model-card {
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--border-radius-md);
+  padding: 20px 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: var(--c-accent);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.model-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.model-rooms {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.model-price {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--c-accent);
+}
+
+.custom-card {
+  margin-top: 0;
+}

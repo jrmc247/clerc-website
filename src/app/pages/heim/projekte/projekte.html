@@ -1,0 +1,38 @@
+<div class="sp-wrap">
+  <p class="sp-eyebrow">{{ 'heim.projekte.eyebrow' | translate }}</p>
+  <h2 class="sp-heading">{{ 'heim.projekte.heading' | translate }}</h2>
+  <p class="sp-lead">{{ 'heim.projekte.lead' | translate }}</p>
+
+  <div class="projects">
+    @for (p of projects; track p.name) {
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-location">{{ p.location }}</div>
+            <h3 class="project-name">{{ p.name }}</h3>
+          </div>
+          <div class="sp-contact">
+            <span class="sp-contact-name">{{ p.contactName }}</span>
+            <a [href]="'mailto:' + p.contactEmail">{{ p.contactEmail }}</a>
+          </div>
+        </div>
+        <p class="project-desc">{{ p.descKey | translate }}</p>
+        @if (p.units.length) {
+          <div class="project-prices">
+            @for (u of p.units; track u.label) {
+              <div class="price-chip">
+                <span class="price-label">{{ u.label }}</span>
+                <span class="price-val">{{ u.price }}</span>
+              </div>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="sp-cta-block">
+    <p>{{ 'heim.projekte.cta.text' | translate }}</p>
+    <a href="mailto:tornare@clerc.ch">{{ 'heim.projekte.cta.btn' | translate }}</a>
+  </div>
+</div>

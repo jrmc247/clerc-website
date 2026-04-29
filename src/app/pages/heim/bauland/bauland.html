@@ -1,0 +1,31 @@
+<div class="sp-wrap">
+  <p class="sp-eyebrow">{{ 'heim.bauland.eyebrow' | translate }}</p>
+  <h2 class="sp-heading">{{ 'heim.bauland.heading' | translate }}</h2>
+  <p class="sp-lead">{{ 'heim.bauland.lead' | translate }}</p>
+
+  @for (dev of developments; track dev.nameKey) {
+    <div class="development">
+      <div class="dev-header">
+        <span class="dev-location">{{ dev.location }}</span>
+        <h3 class="dev-name">{{ dev.nameKey | translate }}</h3>
+      </div>
+      <div class="plots">
+        @for (plot of dev.plots; track plot.ref) {
+          <div class="plot-card">
+            <div class="plot-ref">{{ plot.ref }}</div>
+            <div class="plot-area">{{ plot.area }}</div>
+            <div class="plot-price">{{ plot.price }}</div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+  <div class="sp-divider"></div>
+  <p class="notice">{{ 'heim.bauland.notice' | translate }}</p>
+
+  <div class="sp-cta-block">
+    <p>{{ 'heim.bauland.cta.text' | translate }}</p>
+    <a href="mailto:info@clerc.ch">{{ 'heim.bauland.cta.btn' | translate }}</a>
+  </div>
+</div>

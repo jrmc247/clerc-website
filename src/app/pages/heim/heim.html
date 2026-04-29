@@ -3,15 +3,23 @@
   <div class="hero-eyebrow">
     {{ 'divisions.heim.fullName' | translate }} · <span class="accent">{{ 'divisions.heim.tagline' | translate }}</span>
   </div>
-  <h1>{{ 'heim.hero.h1Line1' | translate }}<br />{{ 'heim.hero.h1Line2' | translate }}<br />{{ 'heim.hero.h1Line3' | translate }}</h1>
+  <div class="hero-heading-row">
+    <img class="hero-division-logo" src="logos/logo_eigenheim.svg" alt="CLERC eigenheim AG" width="140" height="126" loading="eager" aria-hidden="true" />
+    <h1>{{ 'heim.hero.h1Line1' | translate }}<br />{{ 'heim.hero.h1Line2' | translate }}<br />{{ 'heim.hero.h1Line3' | translate }}</h1>
+  </div>
   <p class="slogan"><em>...</em>{{ 'heim.hero.slogan' | translate }}</p>
   <p class="lead">{{ 'heim.hero.lead' | translate }}</p>
   <div class="hero-ctas">
-    <a class="btn-primary" href="#kontakt">{{ 'heim.hero.ctaPrimary' | translate }}</a>
-    <a class="btn-ghost" href="#angebot">{{ 'heim.hero.ctaGhost' | translate }}</a>
+    <a class="btn-primary" [routerLink]="['angebot']">{{ 'heim.hero.ctaPrimary' | translate }}</a>
+    <a class="btn-ghost" [routerLink]="['team']">{{ 'nav.links.about' | translate }}</a>
   </div>
+  <nav class="division-nav" aria-label="eigenheim navigation">
+    @for (link of navLinks; track link.path) {
+      <a class="dn-link" [routerLink]="[link.path]" routerLinkActive="active" (click)="scrollToContent()">
+        {{ link.labelKey | translate }}
+      </a>
+    }
+  </nav>
 </section>
 
-<section class="placeholder">
-  <p>{{ 'heim.placeholder' | translate }}</p>
-</section>
+<router-outlet scrollOnNavigate />

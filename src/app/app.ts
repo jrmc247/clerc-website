@@ -32,7 +32,15 @@ export class App {
       .subscribe(() => {
         let r = this.route;
         while (r.firstChild) r = r.firstChild;
-        const division = r.snapshot.data['division'] as Division | undefined;
+        // Walk back up the route tree to find the nearest ancestor with division data.
+        // Child routes (e.g. bau/angebot) don't carry the data themselves.
+        let snapshot = r.snapshot;
+        let division: Division | undefined;
+        while (snapshot) {
+          division = snapshot.data['division'] as Division | undefined;
+          if (division) break;
+          snapshot = snapshot.parent!;
+        }
         if (division) this.theme.set(division);
       });
   }

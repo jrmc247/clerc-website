@@ -1,0 +1,29 @@
+<div class="sp-wrap">
+  <p class="sp-eyebrow">{{ 'heim.ideenhaeuser.eyebrow' | translate }}</p>
+  <h2 class="sp-heading">{{ 'heim.ideenhaeuser.heading' | translate }}</h2>
+  <p class="sp-lead">{{ 'heim.ideenhaeuser.lead' | translate }}</p>
+
+  <p class="disclaimer">{{ 'heim.ideenhaeuser.disclaimer' | translate }}</p>
+
+  <div class="models-grid">
+    @for (m of models; track m.name) {
+      <div class="model-card">
+        <div class="model-name">{{ m.name }}</div>
+        <div class="model-rooms">{{ m.rooms }} {{ 'heim.ideenhaeuser.rooms' | translate }}</div>
+        <div class="model-price">{{ m.price }}</div>
+      </div>
+    }
+  </div>
+
+  <div class="sp-divider"></div>
+  <div class="sp-card custom-card">
+    <p class="sp-card-label">{{ 'heim.ideenhaeuser.custom.label' | translate }}</p>
+    <p class="sp-card-title">{{ 'heim.ideenhaeuser.custom.title' | translate }}</p>
+    <p class="sp-card-body">{{ 'heim.ideenhaeuser.custom.body' | translate }}</p>
+  </div>
+
+  <div class="sp-cta-block">
+    <p>{{ 'heim.ideenhaeuser.cta.text' | translate }}</p>
+    <a href="mailto:info@clerc.ch">{{ 'heim.ideenhaeuser.cta.btn' | translate }}</a>
+  </div>
+</div>

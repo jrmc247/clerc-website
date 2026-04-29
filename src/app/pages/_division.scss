@@ -11,8 +11,7 @@
   position: relative;
   overflow: hidden;
   background: var(--c-primary);
-  padding: 80px 48px 72px;
-  min-height: 78vh;
+  padding: 220px 48px 72px; /* top: navbar-height + breathing room */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,7 +36,11 @@
     left: -60px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--c-accent) 22%, transparent) 0%, transparent 65%);
+    background: radial-gradient(
+      ellipse at center,
+      color-mix(in srgb, var(--c-accent) 22%, transparent) 0%,
+      transparent 65%
+    );
     pointer-events: none;
     transition: background var(--transition);
   }
@@ -73,6 +76,15 @@
   }
 }
 
+.hero-heading-row {
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+  margin-bottom: 12px;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.15s;
+}
+
 h1 {
   font-family: var(--font-display);
   font-size: clamp(44px, 7.5vw, 88px);
@@ -80,14 +92,22 @@ h1 {
   color: #fff;
   line-height: 1.06;
   letter-spacing: -0.02em;
-  margin: 0 0 12px;
-  animation: fade-up 0.65s ease both;
-  animation-delay: 0.15s;
+  margin: 0;
+  flex: 1;
+}
+
+.hero-division-logo {
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  align-self: stretch;
+  opacity: 0.92;
+  filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.45));
 }
 
 .slogan {
   font-family: var(--font-display);
-  font-style: italic;
+  font-weight: 300;
   font-size: clamp(15px, 2vw, 20px);
   color: rgba(255, 255, 255, 0.36);
   margin: 0 0 18px;
@@ -130,7 +150,10 @@ h1 {
   letter-spacing: 0.04em;
   display: inline-flex;
   align-items: center;
-  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
 }
 
 .btn-primary {
@@ -171,14 +194,61 @@ h1 {
   }
 }
 
+/* ── Division sub-nav ────────────────────────────────────────────── */
+.division-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 32px;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.52s;
+}
+
+.dn-link {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 40px;
+  color: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.88);
+    border-color: rgba(255, 255, 255, 0.28);
+  }
+
+  &.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: transparent;
+  }
+}
+
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 760px) {
   .hero {
-    padding: 60px 24px 48px;
+    padding: calc(72px + 32px) 24px 48px;
     min-height: 68vh;
+  }
+
+  .hero-heading-row {
+    gap: 18px;
+  }
+
+  .hero-division-logo {
+    max-height: clamp(70px, 20vw, 110px);
   }
 
   .placeholder {
     padding: 40px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-division-logo {
+    transition: none;
   }
 }

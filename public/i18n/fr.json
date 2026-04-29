@@ -1,8 +1,6 @@
 {
-  "lang": {
-    "de": "DE",
-    "fr": "FR"
-  },
+  "lang": { "de": "DE", "fr": "FR", "it": "IT" },
+
   "nav": {
     "switcherLabel": "Choisir le domaine",
     "links": {
@@ -10,107 +8,295 @@
       "about": "À propos",
       "contact": "Contact",
       "jobs": "Emplois"
+    },
+    "sub": {
+      "offer":        "Prestations",
+      "projects":     "Projets",
+      "bauland":      "Terrains",
+      "ideenhaeuser": "Maisons types",
+      "financing":    "Financement",
+      "references":   "Références",
+      "team":         "Équipe"
     }
   },
+
   "footer": {
     "copyright": "© {year} CLERC AG · Guin · Fribourg"
   },
+
+  "common": {
+    "referenzen": {
+      "eyebrow":       "Références",
+      "gallery_coming": "Galerie photos disponible prochainement."
+    },
+    "contact_cta": "Nous contacter"
+  },
+
   "home": {
     "hero": {
-      "eyebrow": "Clerc AG · Guin · Depuis 1947",
+      "eyebrow":          "Clerc AG · Guin · Depuis 1947",
       "eyebrowHighlight": "Trois domaines",
       "h1Line1": "Planifier.",
       "h1Line2": "Construire.",
       "h1Line3": "Réaliser.",
-      "slogan": "...Vos partenaires dans la construction",
-      "lead": "Depuis 77 ans, nous réalisons des projets de construction de qualité dans le canton de Fribourg — de la planification à la remise des clés, à travers trois entreprises spécialisées.",
+      "slogan":     "...Vos partenaires dans la construction",
+      "lead":       "Depuis 77 ans, nous réalisons des projets de construction de qualité dans le canton de Fribourg — de la planification à la remise des clés, à travers trois entreprises spécialisées.",
       "ctaPrimary": "Choisir un domaine",
-      "ctaGhost": "Contact",
+      "ctaGhost":   "Contact",
       "stats": {
-        "years": "ans d'expérience",
+        "years":     "ans d'expérience",
         "divisions": "domaines",
-        "staff": "collaborateurs"
+        "staff":     "collaborateurs"
       }
     }
   },
+
   "bau": {
     "hero": {
       "h1Line1": "Gros et",
       "h1Line2": "génie civil.",
       "h1Line3": "Avec expertise.",
-      "slogan": "...Vos partenaires dans la construction",
-      "lead": "De la fouille de fondation jusqu'au faîte — CLERC bau AG réalise votre projet de construction avec savoir-faire et passion.",
+      "slogan":     "...Vos partenaires dans la construction",
+      "lead":       "De la fouille de fondation jusqu'au faîte — CLERC bau AG réalise votre projet de construction avec savoir-faire et passion.",
       "ctaPrimary": "Demander une offre",
-      "ctaGhost": "Prestations"
+      "ctaGhost":   "Références"
     },
-    "placeholder": "Contenu à venir — Prestations, À propos, Références, Emplois."
+    "angebot": {
+      "eyebrow": "Prestations",
+      "heading": "Ce que nous construisons pour vous",
+      "lead":    "CLERC bau AG est votre partenaire de confiance pour les travaux de gros œuvre et de génie civil dans le canton de Fribourg. Avec plus de 75 ans d'expérience, nous réalisons des projets de toute taille — dans les délais et au prix fixe.",
+      "hochbau": {
+        "label": "Gros œuvre",
+        "title": "Logements & locaux commerciaux",
+        "body":  "Constructions neuves, maisons individuelles, immeubles collectifs et bâtiments commerciaux. Nous prenons en charge l'ensemble de l'exécution du terrassement jusqu'au nettoyage final."
+      },
+      "tiefbau": {
+        "label": "Génie civil",
+        "title": "Fondations & infrastructures",
+        "body":  "Canalisations, voirie, pose de canalisations et terrassements. Exécution précise même dans des conditions de terrain difficiles."
+      },
+      "umbau": {
+        "label": "Rénovations",
+        "title": "Rénover l'existant",
+        "body":  "Travaux de transformation et de rénovation avec un impact minimal sur l'exploitation en cours. Assainissements énergétiques, surélévations, extensions."
+      },
+      "umgebung": {
+        "label": "Aménagements extérieurs",
+        "title": "Parfaire l'extérieur",
+        "body":  "Murs de jardin, places assises, allées, plantations et clôtures. Nous aménageons les abords de votre bâtiment de manière globale et durable."
+      },
+      "cta": {
+        "text": "Prêt pour votre projet de construction?",
+        "btn":  "Demande sans engagement"
+      }
+    },
+    "referenzen": {
+      "heading": "Nos projets de construction",
+      "lead":    "De la maison individuelle à la grande résidence — un aperçu des projets réalisés par CLERC bau AG dans le canton de Fribourg."
+    }
   },
+
   "beton": {
     "hero": {
       "h1Line1": "Forer.",
       "h1Line2": "Découper.",
       "h1Line3": "Avec précision.",
-      "slogan": "...Vos partenaires dans la construction",
-      "lead": "Carottage, sciage mural, sciage au fil — CLERC beton-trenn AG est votre spécialiste pour tous les travaux de découpe du béton.",
+      "slogan":     "...Vos partenaires dans la construction",
+      "lead":       "Carottage, sciage mural, sciage au fil — CLERC beton-trenn AG est votre spécialiste pour tous les travaux de découpe du béton.",
       "ctaPrimary": "Demander une offre",
-      "ctaGhost": "Prestations"
+      "ctaGhost":   "Références"
     },
-    "placeholder": "Contenu à venir — Prestations, À propos, Références, Emplois."
+    "angebot": {
+      "eyebrow": "Prestations",
+      "heading": "Forage & découpe à la technique diamant",
+      "lead":    "CLERC beton-trenn AG utilise la technologie diamant la plus moderne — pour des coupes propres et précises dans le béton armé, la maçonnerie, l'asphalte et la pierre naturelle. Sans vibrations, sans bruit.",
+      "wandsaegen": {
+        "title": "Sciage mural & à chaîne",
+        "body":  "Les matériaux de construction comme le béton armé ou la maçonnerie sont coupés proprement et précisément par scie murale, scie à chaîne ou scie annulaire. Idéal pour les découpes angulaires dans les murs, plafonds et sols."
+      },
+      "kernbohren": {
+        "title": "Carottage",
+        "body":  "Perçages nets pour conduits d'eau, de ventilation et de canalisations en rénovation et construction neuve. Standard jusqu'à Ø 600 mm, plus grand sur demande. Profondeur jusqu'à 6,00 m réalisée."
+      },
+      "seilsaegen": {
+        "title": "Sciage au fil diamanté",
+        "body":  "La découpe au fil diamanté est la méthode la plus efficace pour les grands ouvrages en acier. Aucune limitation de profondeur, coupes circulaires possibles — pour la démolition et le démantèlement."
+      },
+      "bodensaegen": {
+        "title": "Sciage de sols",
+        "body":  "Découpe dans les sols en béton armé, béton, asphalte et pierre naturelle. Haute productivité et courts temps d'installation permettent une utilisation économique."
+      },
+      "cta": {
+        "text": "Discuter de votre projet?",
+        "btn":  "Demander maintenant"
+      }
+    },
+    "referenzen": {
+      "heading": "Références découpe béton",
+      "lead":    "Carottages, sciages muraux et travaux de démolition — projets réalisés par CLERC beton-trenn AG."
+    }
   },
+
   "heim": {
     "hero": {
       "h1Line1": "Votre chez-vous.",
       "h1Line2": "Planifié.",
       "h1Line3": "Construit.",
-      "slogan": "...Vos partenaires dans la construction",
-      "lead": "Posséder sa propre maison est le plus grand rêve. Nous vous accompagnons de la première idée à la remise des clés.",
-      "ctaPrimary": "Discuter de votre projet",
-      "ctaGhost": "Prestations"
+      "slogan":     "...Vos partenaires dans la construction",
+      "lead":       "Posséder sa propre maison est le plus grand rêve. Nous vous accompagnons de la première idée à la remise des clés.",
+      "ctaPrimary": "Découvrir notre offre",
+      "ctaGhost":   "À propos"
     },
-    "placeholder": "Contenu à venir — Prestations, À propos, Références, Emplois."
-  },
-  "cards": {
-    "cta": "Voir la page",
-    "bau": {
-      "services": ["Gros œuvre", "Génie civil", "Rénovations", "Aménagement extérieur"]
+    "angebot": {
+      "eyebrow": "Comment ça fonctionne",
+      "heading": "Construire sans risque — au prix fixe",
+      "lead":    "CLERC eigenheim AG est votre entreprise générale pour la construction de maisons individuelles dans le canton de Fribourg. Nous prenons en charge tout — de la première esquisse à la remise des clés — à un prix fixe garanti.",
+      "f1": {
+        "title": "Maisons individuelles",
+        "body":  "Nos maisons types sont un point de départ, pas une contrainte. Chaque maison est adaptée à vos souhaits et besoins — plan, finitions, matériaux."
+      },
+      "f2": {
+        "title": "Garantie prix fixe",
+        "body":  "Nous vous proposons un contrat d'entreprise avec descriptif de construction détaillé et prix fixe contraignant. Pas de coûts cachés, pas de risque."
+      },
+      "f3": {
+        "title": "Finances maîtrisées",
+        "body":  "Calcul clair et précis, garantie prix fixe et exécution dans les délais. Les paiements sont échelonnés selon l'avancement des travaux — vous ne payez que ce qui est construit."
+      },
+      "f4": {
+        "title": "Travaux en régie possibles",
+        "body":  "Vous souhaitez mettre la main à la pâte? Les travaux en régie sont toujours possibles et réduisent vos coûts. Nous intégrons votre contribution de manière transparente dans le processus de construction."
+      },
+      "included": {
+        "eyebrow": "Inclus dans le prix fixe",
+        "heading": "Tout d'une seule main"
+      },
+      "includedItems": [
+        "Avant-projet & calcul des coûts",
+        "Demande & permis de construire",
+        "Maison complète incl. garage",
+        "Terrain (sur demande)",
+        "Taxes & honoraires",
+        "Direction des travaux & garanties SIA",
+        "Travaux préparatoires",
+        "TVA"
+      ],
+      "cta": {
+        "text": "Prendre un premier rendez-vous sans engagement",
+        "btn":  "Demander maintenant"
+      }
     },
-    "beton": {
-      "services": ["Carottage", "Sciage", "Sciage au fil", "Déconstruction"]
+    "projekte": {
+      "eyebrow": "Projets actuels",
+      "heading": "Ce qui est en cours",
+      "lead":    "Résidences et maisons individuelles dans la région de Fribourg — en planification ou en réalisation.",
+      "weitblick": {
+        "desc": "4 immeubles avec 12 appartements en propriété à Rechthalten. Bâtiments A & C: trois appartements de 4½ pièces chacun. Bâtiment B: trois appartements de 3½ pièces. Bâtiment D: trois appartements de 5½ pièces. Grands balcons, vue sud-ouest garantie."
+      },
+      "oberimatta": {
+        "desc": "2 immeubles (6 logements chacun), 2 maisons (3 logements chacun) et 5 maisons individuelles à Brünisried. Au total 18 appartements et 6 maisons, 4½ à 5½ pièces. Situation calme, finitions de qualité. Prix en cours d'élaboration."
+      },
+      "seebacher": {
+        "desc": "4 maisons individuelles avec carport à Kleinguschelmuth. Unités A, B et D attribuées. Maison C encore disponible."
+      },
+      "cta": {
+        "text": "Intéressé? Nous vous conseillons volontiers.",
+        "btn":  "Contacter Pascal Tornare"
+      }
     },
-    "heim": {
-      "services": ["Planification", "Construction neuve", "Conseil & planification", "Réalisation"]
+    "bauland": {
+      "eyebrow": "Terrains à bâtir",
+      "heading": "Construisez sur notre terrain",
+      "lead":    "Parcelles sélectionnées dans la région de Fribourg — avec obligation de construire via CLERC eigenheim AG.",
+      "beausite":   { "name": "Lotissement «beausite»" },
+      "pleinsoleil":{ "name": "Lotissement «pleine soleil»" },
+      "notice": "L'acquisition d'une parcelle à bâtir n'est possible qu'avec une obligation de construire via CLERC eigenheim AG.",
+      "cta": {
+        "text": "Questions sur les terrains?",
+        "btn":  "Demander maintenant"
+      }
+    },
+    "ideenhaeuser": {
+      "eyebrow":    "Maisons types",
+      "heading":    "21 modèles comme point de départ",
+      "lead":       "Nos maisons types montrent ce qui est possible. Vous choisissez un modèle, nous l'adaptons à vos souhaits — plan, niveau de finition et taille.",
+      "disclaimer": "Tous les prix sont indicatifs et varient selon la situation, la topographie et la taille. Non compris: garage, terrain, aménagements extérieurs, taxes et frais notariaux.",
+      "rooms":      "pièces",
+      "custom": {
+        "label": "Solution individuelle",
+        "title": "Aucun modèle ne convient?",
+        "body":  "Pas de problème — nous planifions votre maison de A à Z selon vos idées. Premier entretien gratuit et estimation des coûts sans engagement."
+      },
+      "cta": {
+        "text": "Quel modèle vous intéresse?",
+        "btn":  "Discuter sans engagement"
+      }
+    },
+    "finanzierung": {
+      "eyebrow": "Financement",
+      "heading": "Votre budget — clair et sûr",
+      "lead":    "Construire sa maison est un grand investissement. Nous vous aidons à garder une vue d'ensemble — avec un calcul clair, une garantie prix fixe et un conseil personnalisé.",
+      "guarantee": {
+        "label": "Garantie prix fixe",
+        "title": "Pas de mauvaises surprises",
+        "body":  "Notre contrat d'entreprise avec descriptif détaillé garantit un prix fixe contraignant. Ce qui est convenu est construit — pour exactement ce prix."
+      },
+      "stages": {
+        "label": "Plan de paiement",
+        "title": "Échelonné selon l'avancement",
+        "body":  "Vous ne payez que ce qui est construit. Les paiements s'effectuent par étapes définies selon l'avancement des travaux — planifiable et transparent."
+      },
+      "eigenleistung": {
+        "label": "Travaux en régie",
+        "title": "Participer soi-même, c'est économiser",
+        "body":  "Les travaux en régie sont toujours possibles. Que ce soit la peinture, l'aménagement du jardin ou autre — votre contribution est prise en compte et coordonnée."
+      },
+      "costs": {
+        "label": "Frais annexes",
+        "title": "Tout inclus dans le calcul",
+        "body":  "Inscription, actes de gage et intérêts de crédit de construction d'env. CHF 40'000 sont pris en compte dans le plan budgétaire. Nous vous montrons tout ce qui vous attend."
+      },
+      "cta": {
+        "text": "Nous vous aidons à clarifier le financement.",
+        "btn":  "Demander un rendez-vous conseil"
+      }
+    },
+    "referenzen": {
+      "heading": "Références eigenheim",
+      "lead":    "Maisons individuelles et résidences réalisées dans le canton de Fribourg — de Wallenried à Gurmels."
+    },
+    "team": {
+      "eyebrow": "L'équipe",
+      "heading": "Personnel. Compétent. Fiable.",
+      "lead":    "Derrière chaque maison, il y a des personnes. Faites connaissance avec l'équipe qui réalise votre rêve.",
+      "rene":   { "name": "René Clerc",     "role": "Direction" },
+      "pascal": { "name": "Pascal Tornare", "role": "Planification, gestion de projet & direction des travaux" },
+      "company": { "eyebrow": "Contact direct" }
     }
   },
+
+  "cards": {
+    "cta": "Voir la page",
+    "bau":   { "services": ["Gros œuvre", "Génie civil", "Rénovations", "Aménagement extérieur"] },
+    "beton": { "services": ["Carottage", "Sciage à disque", "Sciage au fil", "Démolition"] },
+    "heim":  { "services": ["Planification", "Construction neuve", "Conseil & planification", "Réalisation"] }
+  },
+
   "history": {
     "eyebrow": "Notre histoire",
     "milestones": [
-      { "year": "1947", "label": "Fondation" },
-      { "year": "1968", "label": "2e génération" },
-      { "year": "1980s", "label": "60 collaborateurs" },
-      { "year": "2001", "label": "3e génération" },
-      { "year": "Aujourd'hui", "label": "Digital & moderne" }
+      { "year": "1947",         "label": "Fondation" },
+      { "year": "1968",         "label": "2e génération" },
+      { "year": "années 1980",  "label": "60 collaborateurs" },
+      { "year": "2001",         "label": "3e génération" },
+      { "year": "Aujourd'hui",  "label": "Digital & moderne" }
     ]
   },
+
   "divisions": {
-    "home": {
-      "label": "Groupe",
-      "fullName": "CLERC AG",
-      "tagline": "Trois domaines"
-    },
-    "bau": {
-      "label": "bau",
-      "fullName": "CLERC bau AG",
-      "tagline": "gros & génie civil"
-    },
-    "beton": {
-      "label": "beton-trenn",
-      "fullName": "CLERC beton-trenn AG",
-      "tagline": "forer - découper"
-    },
-    "heim": {
-      "label": "eigenheim",
-      "fullName": "CLERC eigenheim AG",
-      "tagline": "planifier - réaliser"
-    }
+    "home":  { "label": "Groupe",      "fullName": "CLERC AG",             "tagline": "Trois domaines" },
+    "bau":   { "label": "bau",         "fullName": "CLERC bau AG",         "tagline": "gros & génie civil" },
+    "beton": { "label": "beton-trenn", "fullName": "CLERC beton-trenn AG", "tagline": "forer - découper" },
+    "heim":  { "label": "eigenheim",   "fullName": "CLERC eigenheim AG",   "tagline": "planifier - réaliser" }
   }
 }

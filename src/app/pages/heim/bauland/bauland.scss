@@ -1,0 +1,72 @@
+.development {
+  margin-bottom: 40px;
+}
+
+.dev-header {
+  margin-bottom: 16px;
+}
+
+.dev-location {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+}
+
+.dev-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 4px 0 0;
+}
+
+.plots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.plot-card {
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--border-radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.plot-ref {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.plot-area {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.plot-price {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-accent);
+}
+
+.notice {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin: 0;
+  padding: 16px 20px;
+  background: var(--color-background-secondary);
+  border-left: 3px solid var(--c-accent);
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+}

@@ -1,8 +1,6 @@
 {
-  "lang": {
-    "de": "DE",
-    "fr": "FR"
-  },
+  "lang": { "de": "DE", "fr": "FR", "it": "IT" },
+
   "nav": {
     "switcherLabel": "Fachbereich wählen",
     "links": {
@@ -10,107 +8,295 @@
       "about": "Über uns",
       "contact": "Kontakt",
       "jobs": "Stellen"
+    },
+    "sub": {
+      "offer":        "Angebot",
+      "projects":     "Projekte",
+      "bauland":      "Bauland",
+      "ideenhaeuser": "Ideenhäuser",
+      "financing":    "Finanzierung",
+      "references":   "Referenzen",
+      "team":         "Team"
     }
   },
+
   "footer": {
     "copyright": "© {year} CLERC AG · Düdingen · Freiburg"
   },
+
+  "common": {
+    "referenzen": {
+      "eyebrow":       "Referenzen",
+      "gallery_coming": "Bildergalerie folgt in Kürze."
+    },
+    "contact_cta": "Kontakt aufnehmen"
+  },
+
   "home": {
     "hero": {
-      "eyebrow": "Clerc AG · Düdingen · Seit 1947",
+      "eyebrow":          "Clerc AG · Düdingen · Seit 1947",
       "eyebrowHighlight": "Drei Fachbereiche",
       "h1Line1": "Planen.",
       "h1Line2": "Bauen.",
       "h1Line3": "Realisieren.",
-      "slogan": "...Ihre Partner am Bau",
-      "lead": "Seit 77 Jahren realisieren wir hochwertige Bauprojekte im Freiburgerland — von der Planung bis zur Übergabe, über drei spezialisierte Fachbetriebe.",
+      "slogan":     "...Ihre Partner am Bau",
+      "lead":       "Seit 77 Jahren realisieren wir hochwertige Bauprojekte im Freiburgerland — von der Planung bis zur Übergabe, über drei spezialisierte Fachbetriebe.",
       "ctaPrimary": "Bereich wählen",
-      "ctaGhost": "Kontakt",
+      "ctaGhost":   "Kontakt",
       "stats": {
-        "years": "Jahre Erfahrung",
+        "years":     "Jahre Erfahrung",
         "divisions": "Fachbereiche",
-        "staff": "Mitarbeitende"
+        "staff":     "Mitarbeitende"
       }
     }
   },
+
   "bau": {
     "hero": {
       "h1Line1": "Hoch- und",
       "h1Line2": "Tiefbau.",
       "h1Line3": "Mit Erfahrung.",
-      "slogan": "...Ihre Partner am Bau",
-      "lead": "Von der Fundamentgrube bis zum Dachfirst — die CLERC bau AG realisiert Ihr Bauprojekt mit Fachwissen und Leidenschaft.",
+      "slogan":     "...Ihre Partner am Bau",
+      "lead":       "Von der Fundamentgrube bis zum Dachfirst — die CLERC bau AG realisiert Ihr Bauprojekt mit Fachwissen und Leidenschaft.",
       "ctaPrimary": "Angebot anfragen",
-      "ctaGhost": "Leistungen"
+      "ctaGhost":   "Referenzen"
     },
-    "placeholder": "Inhalt folgt — Angebot, Über uns, Referenzen, Stellen."
+    "angebot": {
+      "eyebrow": "Leistungen",
+      "heading": "Was wir für Sie bauen",
+      "lead":    "Die CLERC bau AG ist Ihr zuverlässiger Partner für Hoch- und Tiefbau im Freiburgerland. Mit über 75 Jahren Erfahrung und einem eingespielten Team realisieren wir Projekte jeder Grösse — termintreu und zum Festpreis.",
+      "hochbau": {
+        "label": "Hochbau",
+        "title": "Wohnbauten & Gewerbe",
+        "body":  "Neubauten, Einfamilienhäuser, Mehrfamilienhäuser und Gewerbeobjekte. Wir übernehmen die gesamte Ausführung vom Aushub bis zur Schlussreinigung."
+      },
+      "tiefbau": {
+        "label": "Tiefbau",
+        "title": "Fundament & Infrastruktur",
+        "body":  "Kanalisationen, Strassenbau, Leitungsverlegung und Erdbewegungen. Präzise Ausführung auch unter schwierigen Geländebedingungen."
+      },
+      "umbau": {
+        "label": "Umbau & Renovationen",
+        "title": "Bestand erneuern",
+        "body":  "Fachkundige Umbau- und Renovationsarbeiten mit minimalem Einfluss auf den laufenden Betrieb. Energetische Sanierungen, Aufstockungen, Anbauten."
+      },
+      "umgebung": {
+        "label": "Umgebungsarbeiten",
+        "title": "Aussen vollenden",
+        "body":  "Gartenmauern, Sitzplätze, Zufahrten, Bepflanzung und Einfriedungen. Wir gestalten das Umfeld Ihres Gebäudes ganzheitlich und dauerhaft."
+      },
+      "cta": {
+        "text": "Bereit für Ihr Bauprojekt?",
+        "btn":  "Unverbindlich anfragen"
+      }
+    },
+    "referenzen": {
+      "heading": "Unsere Bauprojekte",
+      "lead":    "Vom Einfamilienhaus bis zur Überbauung — ein Querschnitt realisierter Projekte der CLERC bau AG im Freiburgerland."
+    }
   },
+
   "beton": {
     "hero": {
       "h1Line1": "Bohren.",
       "h1Line2": "Schneiden.",
       "h1Line3": "Präzise.",
-      "slogan": "...Ihre Partner am Bau",
-      "lead": "Kernbohren, Wandsägen, Seilsägen — die CLERC beton-trenn AG ist Ihr Spezialist für alle Betontrennarbeiten.",
+      "slogan":     "...Ihre Partner am Bau",
+      "lead":       "Kernbohren, Wandsägen, Seilsägen — die CLERC beton-trenn AG ist Ihr Spezialist für alle Betontrennarbeiten.",
       "ctaPrimary": "Angebot anfragen",
-      "ctaGhost": "Leistungen"
+      "ctaGhost":   "Referenzen"
     },
-    "placeholder": "Inhalt folgt — Angebot, Über uns, Referenzen, Stellen."
+    "angebot": {
+      "eyebrow": "Leistungen",
+      "heading": "Bohren & Schneiden mit Diamanttechnik",
+      "lead":    "Die CLERC beton-trenn AG setzt modernste Diamanttechnik ein — für saubere, präzise Schnitte in Stahlbeton, Mauerwerk, Asphalt und Naturstein. Ohne Erschütterungen, ohne Lärm.",
+      "wandsaegen": {
+        "title": "Wand- & Kettensägen",
+        "body":  "Baustoffe wie Stahlbeton oder Mauerwerk werden mittels Wandsäge, Kettensäge oder Ringsäge sauber und exakt durchtrennt. Ideal für eckige Ausschnitte in Wänden, Decken und Böden."
+      },
+      "kernbohren": {
+        "title": "Kernbohren",
+        "body":  "Saubere Bohrungen für Wasser-, Belüftungs- und Rohrleitungskanäle im Um- und Neubau. Standard bis Ø 600 mm, auf Anfrage auch grösser. Tiefe bisher bis 6,00 m realisiert."
+      },
+      "seilsaegen": {
+        "title": "Seilsägen",
+        "body":  "Das Schneiden mit einem Diamantseil ist die effektivste Methode für grosse Stahlbauwerke. Keine Tiefenbegrenzung, kreisförmige Schnitte möglich — für Abbruch und Rückbau."
+      },
+      "bodensaegen": {
+        "title": "Bodensägen",
+        "body":  "Schneiden und Trennen in Böden aus Stahlbeton, Beton, Asphalt und Naturstein. Hohe Produktivität und kurze Rüstzeiten ermöglichen einen wirtschaftlichen Einsatz."
+      },
+      "cta": {
+        "text": "Projekt besprechen?",
+        "btn":  "Jetzt anfragen"
+      }
+    },
+    "referenzen": {
+      "heading": "Referenzen Betontrennarbeiten",
+      "lead":    "Kernbohrungen, Wandschnitte und Abbrucharbeiten — realisierte Projekte der CLERC beton-trenn AG."
+    }
   },
+
   "heim": {
     "hero": {
       "h1Line1": "Ihr Zuhause.",
       "h1Line2": "Geplant.",
       "h1Line3": "Gebaut.",
-      "slogan": "...Ihre Partner am Bau",
-      "lead": "Das eigene Heim ist der grösste Traum. Wir begleiten Sie von der ersten Idee bis zur Schlüsselübergabe.",
-      "ctaPrimary": "Traum besprechen",
-      "ctaGhost": "Leistungen"
+      "slogan":     "...Ihre Partner am Bau",
+      "lead":       "Das eigene Heim ist der grösste Traum. Wir begleiten Sie von der ersten Idee bis zur Schlüsselübergabe.",
+      "ctaPrimary": "Angebot entdecken",
+      "ctaGhost":   "Über uns"
     },
-    "placeholder": "Inhalt folgt — Angebot, Über uns, Referenzen, Stellen."
-  },
-  "cards": {
-    "cta": "Zur Seite",
-    "bau": {
-      "services": ["Hochbau", "Tiefbau", "Umbau & Renovationen", "Umgebungsarbeiten"]
+    "angebot": {
+      "eyebrow": "So funktioniert es",
+      "heading": "Bauen ohne Risiko — zum Festpreis",
+      "lead":    "CLERC eigenheim AG ist Ihre Generalunternehmung für den Eigenheimbau im Kanton Freiburg. Wir übernehmen alles — von der ersten Skizze bis zur Schlüsselübergabe — zu einem garantierten Festpreis.",
+      "f1": {
+        "title": "Individuelle Häuser",
+        "body":  "Unsere Ideenhäuser sind Ausgangspunkt, nicht Endpunkt. Jedes Haus wird nach Ihren Wünschen und Bedürfnissen angepasst — Grundriss, Ausbau, Material."
+      },
+      "f2": {
+        "title": "Festpreisgarantie",
+        "body":  "Wir bieten Ihnen einen Werkvertrag mit detailliertem Baubeschrieb und verbindlichem Festpreis. Keine versteckten Kosten, kein Risiko."
+      },
+      "f3": {
+        "title": "Finanzen im Griff",
+        "body":  "Klare und genaue Kalkulation, Festpreisgarantie und termingerechte Ausführung. Zahlungen erfolgen gestaffelt nach Baufortschritt — Sie bezahlen nur was gebaut ist."
+      },
+      "f4": {
+        "title": "Eigenleistungen möglich",
+        "body":  "Sie möchten selbst Hand anlegen? Eigenleistungen sind jederzeit möglich und reduzieren Ihre Kosten. Wir koordinieren Ihren Beitrag nahtlos in den Bauprozess."
+      },
+      "included": {
+        "eyebrow": "Im Festpreis inbegriffen",
+        "heading": "Alles aus einer Hand"
+      },
+      "includedItems": [
+        "Vorprojekt & Kostenkalkulation",
+        "Baugesuch & Baubewilligung",
+        "Gesamtes Haus inkl. Garage",
+        "Bauland (auf Wunsch)",
+        "Gebühren & Honorare",
+        "Bauleitung & SIA-Garantien",
+        "Vorbereitungsarbeiten",
+        "Mehrwertsteuer"
+      ],
+      "cta": {
+        "text": "Unverbindliches Erstgespräch vereinbaren",
+        "btn":  "Jetzt anfragen"
+      }
     },
-    "beton": {
-      "services": ["Kernbohren", "Schneiden", "Seilsägen", "Rückbau & Umbau"]
+    "projekte": {
+      "eyebrow": "Aktuelle Projekte",
+      "heading": "Was gerade entsteht",
+      "lead":    "Überbauungen und Einfamilienhäuser in der Region Freiburg — jetzt in Planung oder Realisierung.",
+      "weitblick": {
+        "desc": "4 Wohnhäuser mit insgesamt 12 Eigentumswohnungen in Rechthalten. Gebäude A & C: je drei 4½-Zimmer-Wohnungen. Gebäude B: drei 3½-Zimmer-Wohnungen. Gebäude D: drei 5½-Zimmer-Wohnungen. Grosszügige Balkone, südwestliche Aussicht garantiert."
+      },
+      "oberimatta": {
+        "desc": "2 Wohnhäuser (je 6 Wohnungen), 2 Wohnhäuser (je 3 Wohnungen) und 5 Einfamilienhäuser in Brünisried. Insgesamt 18 Wohnungen und 6 Häuser, 4½ bis 5½ Zimmer. Ruhige Lage, hochwertige Ausstattung. Preise in Erarbeitung."
+      },
+      "seebacher": {
+        "desc": "4 Einfamilienhäuser mit Carport in Kleinguschelmuth. Einheiten A, B und D vergeben. Haus C noch verfügbar."
+      },
+      "cta": {
+        "text": "Interesse? Wir beraten Sie gerne.",
+        "btn":  "Pascal Tornare kontaktieren"
+      }
     },
-    "heim": {
-      "services": ["Eigenheimplanung", "Neubau", "Beratung & Planung", "Realisierung"]
+    "bauland": {
+      "eyebrow": "Baulandparzellen",
+      "heading": "Bauen Sie auf unserem Land",
+      "lead":    "Ausgesuchte Bauparzellen in der Region Freiburg — mit Bauverpflichtung über CLERC eigenheim AG.",
+      "beausite": { "name": "Überbauung «beausite»" },
+      "pleinsoleil": { "name": "Überbauung «pleine soleil»" },
+      "notice": "Der Erwerb einer Bauparzelle ist nur mit einer Bauverpflichtung über CLERC eigenheim AG möglich.",
+      "cta": {
+        "text": "Fragen zu Baulandparzellen?",
+        "btn":  "Jetzt anfragen"
+      }
+    },
+    "ideenhaeuser": {
+      "eyebrow":    "Ideenhäuser",
+      "heading":    "21 Modelle als Ausgangspunkt",
+      "lead":       "Unsere Ideenhäuser zeigen, was möglich ist. Sie wählen ein Modell, wir passen es Ihren Wünschen an — Grundriss, Ausbaustandard und Grösse.",
+      "disclaimer": "Alle Preise sind Richtpreise und variieren je nach Lage, Topographie und Grösse. Nicht inbegriffen: Garage/Unterstand, Bauland, Umgebung, Gebühren und Notarkosten.",
+      "rooms":      "Zimmer",
+      "custom": {
+        "label": "Individuelle Lösung",
+        "title": "Kein Modell passt?",
+        "body":  "Kein Problem — wir planen Ihr Haus von Grund auf nach Ihren Vorstellungen und Bedürfnissen. Kostenloses Erstgespräch und unverbindliche Kostenschätzung."
+      },
+      "cta": {
+        "text": "Welches Modell interessiert Sie?",
+        "btn":  "Unverbindlich besprechen"
+      }
+    },
+    "finanzierung": {
+      "eyebrow": "Finanzierung",
+      "heading": "Ihr Budget — klar und sicher",
+      "lead":    "Eigenheimbau ist eine grosse Investition. Wir helfen Ihnen, den Überblick zu behalten — mit klarer Kalkulation, Festpreisgarantie und persönlicher Beratung.",
+      "guarantee": {
+        "label": "Festpreisgarantie",
+        "title": "Keine bösen Überraschungen",
+        "body":  "Unser Werkvertrag mit detailliertem Baubeschrieb garantiert einen verbindlichen Festpreis. Was vereinbart ist, wird gebaut — für genau diesen Preis."
+      },
+      "stages": {
+        "label": "Zahlungsplan",
+        "title": "Gestaffelt nach Baufortschritt",
+        "body":  "Sie bezahlen nur was gebaut ist. Die Zahlungen erfolgen in definierten Etappen entsprechend dem Baufortschritt — planbar und transparent."
+      },
+      "eigenleistung": {
+        "label": "Eigenleistungen",
+        "title": "Selbst mitanpacken spart",
+        "body":  "Eigenleistungen sind jederzeit möglich. Ob Malerarbeiten, Gartengestaltung oder anderes — Ihr Beitrag wird angerechnet und koordiniert."
+      },
+      "costs": {
+        "label": "Nebenkosten",
+        "title": "Alles eingerechnet",
+        "body":  "Verschreibung, Schuldbriefe und Baukreditzinsen von ca. CHF 40'000 sind im Budgetplan berücksichtigt. Wir zeigen Ihnen, was alles auf Sie zukommt."
+      },
+      "cta": {
+        "text": "Wir helfen Ihnen, die Finanzierung zu klären.",
+        "btn":  "Beratungstermin anfragen"
+      }
+    },
+    "referenzen": {
+      "heading": "Referenzobjekte eigenheim",
+      "lead":    "Realisierte Einfamilienhäuser und Überbauungen im Freiburgerland — von Wallenried bis Gurmels."
+    },
+    "team": {
+      "eyebrow": "Das Team",
+      "heading": "Persönlich. Kompetent. Verlässlich.",
+      "lead":    "Hinter jedem Haus stehen Menschen. Lernen Sie das Team kennen, das Ihren Traum verwirklicht.",
+      "rene":   { "name": "René Clerc",      "role": "Geschäftsführung" },
+      "pascal": { "name": "Pascal Tornare",  "role": "Planung, Projektleitung & Bauleitung" },
+      "company": { "eyebrow": "Direktkontakt" }
     }
   },
+
+  "cards": {
+    "cta": "Zur Seite",
+    "bau":   { "services": ["Hochbau", "Tiefbau", "Umbau & Renovationen", "Umgebungsarbeiten"] },
+    "beton": { "services": ["Kernbohren", "Schneiden", "Seilsägen", "Rückbau & Umbau"] },
+    "heim":  { "services": ["Eigenheimplanung", "Neubau", "Beratung & Planung", "Realisierung"] }
+  },
+
   "history": {
     "eyebrow": "Unsere Geschichte",
     "milestones": [
-      { "year": "1947", "label": "Gründung" },
-      { "year": "1968", "label": "2. Generation" },
-      { "year": "1980er", "label": "60 Mitarbeitende" },
-      { "year": "2001", "label": "3. Generation" },
+      { "year": "1947",  "label": "Gründung" },
+      { "year": "1968",  "label": "2. Generation" },
+      { "year": "1980er","label": "60 Mitarbeitende" },
+      { "year": "2001",  "label": "3. Generation" },
       { "year": "Heute", "label": "Digital & modern" }
     ]
   },
+
   "divisions": {
-    "home": {
-      "label": "Gruppe",
-      "fullName": "CLERC AG",
-      "tagline": "Drei Fachbereiche"
-    },
-    "bau": {
-      "label": "bau",
-      "fullName": "CLERC bau AG",
-      "tagline": "hoch- und tiefbau"
-    },
-    "beton": {
-      "label": "beton-trenn",
-      "fullName": "CLERC beton-trenn AG",
-      "tagline": "bohren - schneiden"
-    },
-    "heim": {
-      "label": "eigenheim",
-      "fullName": "CLERC eigenheim AG",
-      "tagline": "planen - realisieren"
-    }
+    "home":  { "label": "Gruppe",      "fullName": "CLERC AG",              "tagline": "Drei Fachbereiche" },
+    "bau":   { "label": "bau",         "fullName": "CLERC bau AG",          "tagline": "hoch- und tiefbau" },
+    "beton": { "label": "beton-trenn", "fullName": "CLERC beton-trenn AG",  "tagline": "bohren - schneiden" },
+    "heim":  { "label": "eigenheim",   "fullName": "CLERC eigenheim AG",    "tagline": "planen - realisieren" }
   }
 }

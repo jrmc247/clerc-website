@@ -12,7 +12,7 @@ import { TranslatePipe } from '../../core/translate.pipe';
 })
 export class LangSwitcher {
   protected readonly i18n = inject(TranslationService);
-  protected readonly langs: Lang[] = ['de', 'fr'];
+  protected readonly langs: Lang[] = ['de', 'fr', 'it'];
 
   protected async select(lang: Lang): Promise<void> {
     await this.i18n.setLang(lang);
