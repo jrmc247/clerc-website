@@ -44,7 +44,7 @@
 /* ── Division switcher tabs ───────────────────────────────────────── */
 .switcher {
   display: flex;
-  gap: 2px;
+  gap: 8px;
 }
 
 .sw-btn {
@@ -58,7 +58,10 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: transparent;
   color: rgba(255, 255, 255, 0.48);
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background 0.2s;
   white-space: nowrap;
 
   &:hover {
@@ -70,12 +73,8 @@
   &.active {
     color: #fff;
     border-color: transparent;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
   }
-
-  &.active[data-key='bau']   { background: rgba(33, 58, 137, 0.85); }
-  &.active[data-key='beton'] { background: rgba(0, 89, 92, 0.85); }
-  &.active[data-key='heim']  { background: rgba(107, 14, 18, 0.85); }
 }
 
 /* ── Nav links ────────────────────────────────────────────────────── */
@@ -100,11 +99,20 @@
 }
 
 @media (max-width: 840px) {
-  .nav { padding: 0 20px; }
-  .nav-links { display: none; }
-  .nav-divider { margin: 0 10px; }
+  .nav {
+    padding: 0 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-divider {
+    margin: 0 10px;
+  }
 }
 
 @media (max-width: 520px) {
-  .sw-btn { padding: 5px 10px; font-size: 11px; }
+  .sw-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
 }

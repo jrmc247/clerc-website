@@ -31,6 +31,17 @@ export const DIVISIONS: Record<Division, DivisionConfig> = {
     primary: '#d4d4d4',
     route: '/',
   },
+  heim: {
+    key: 'heim',
+    label: 'eigenheim',
+    fullName: 'CLERC eigenheim AG',
+    tagline: 'planen - realisieren',
+    themeClass: 'theme-heim',
+    accent: '#c4161d',
+    primary: '#6b0e12',
+    logo: 'logos/logo_eigenheim.svg',
+    route: '/eigenheim',
+  },
   bau: {
     key: 'bau',
     label: 'bau',
@@ -53,18 +64,8 @@ export const DIVISIONS: Record<Division, DivisionConfig> = {
     logo: 'logos/logo_beton-trenn.svg',
     route: '/beton-trenn',
   },
-  heim: {
-    key: 'heim',
-    label: 'eigenheim',
-    fullName: 'CLERC eigenheim AG',
-    tagline: 'planen - realisieren',
-    themeClass: 'theme-heim',
-    accent: '#c4161d',
-    primary: '#6b0e12',
-    logo: 'logos/logo_eigenheim.svg',
-    route: '/eigenheim',
-  },
 };
 
 /** the three operating divisions (excludes the Gruppe landing) */
-export const DIVISION_KEYS: Division[] = ['bau', 'beton', 'heim'];
+
+export const DIVISION_KEYS: Division[] = ['heim', 'bau', 'beton'];
