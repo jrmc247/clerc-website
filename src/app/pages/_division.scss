@@ -1,86 +1,136 @@
 /* Shared styles for the three division landing pages.
-   Each page imports this via styleUrls — the hero theming reacts to the
-   active --c-primary / --c-accent CSS variables. */
+   The hero's dark background uses --c-primary; accents use --c-accent.
+   Both CSS vars are set by the theme class on <app-root>. */
 
 :host {
   display: block;
 }
 
+/* ── Hero ──────────────────────────────────────────────────────────── */
 .hero {
-  color: #fff;
-  padding: 56px 28px 48px;
   position: relative;
   overflow: hidden;
+  background: var(--c-primary);
+  padding: 80px 48px 72px;
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   transition: background var(--transition);
+
+  /* concrete grain */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: var(--texture);
+    background-size: 200px 200px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  /* radial accent glow, bottom-left */
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -60px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--c-accent) 22%, transparent) 0%, transparent 65%);
+    pointer-events: none;
+    transition: background var(--transition);
+  }
 }
 
 .hero-bg-text {
   position: absolute;
-  right: -10px;
-  bottom: -20px;
-  font-size: 140px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.04);
+  right: -20px;
+  bottom: -12px;
+  font-family: var(--font-display);
+  font-size: clamp(100px, 20vw, 220px);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.032);
   line-height: 1;
   pointer-events: none;
   user-select: none;
+  letter-spacing: -0.02em;
 }
 
 .hero-eyebrow {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 0.1em;
+  font-size: 10.5px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.32);
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.05s;
 
   .accent {
     color: var(--c-accent);
+    opacity: 0.9;
   }
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: clamp(44px, 7.5vw, 88px);
+  font-weight: 400;
   color: #fff;
-  line-height: 1.15;
-  max-width: 460px;
-  margin: 0;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.15s;
 }
 
 .slogan {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 10px 0 0;
+  font-family: var(--font-display);
   font-style: italic;
+  font-size: clamp(15px, 2vw, 20px);
+  color: rgba(255, 255, 255, 0.36);
+  margin: 0 0 18px;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.24s;
 
   em {
     color: var(--c-accent);
-    font-style: normal;
+    opacity: 0.85;
+    font-style: italic;
   }
 }
 
 .lead {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 14px 0 0;
-  max-width: 380px;
-  line-height: 1.65;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.44);
+  max-width: 420px;
+  line-height: 1.72;
+  margin: 0 0 32px;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.32s;
 }
 
+/* ── CTAs ──────────────────────────────────────────────────────────── */
 .hero-ctas {
   display: flex;
-  gap: 10px;
-  margin-top: 24px;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fade-up 0.65s ease both;
+  animation-delay: 0.42s;
 }
 
 .btn-primary,
 .btn-ghost {
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 13px 28px;
+  border-radius: var(--border-radius-sm);
   font-size: 13px;
   font-weight: 500;
+  letter-spacing: 0.04em;
   display: inline-flex;
   align-items: center;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
 }
 
 .btn-primary {
@@ -88,29 +138,47 @@ h1 {
   color: #fff;
 
   &:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.08);
   }
 }
 
 .btn-ghost {
   background: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   &:hover {
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.45);
     color: #fff;
+    transform: translateY(-1px);
   }
 }
 
+/* ── Placeholder section ─────────────────────────────────────────── */
 .placeholder {
-  padding: 40px 28px;
-  border-top: 0.5px solid var(--color-border-tertiary);
+  padding: 56px 48px;
+  border-top: 1px solid var(--color-border-subtle);
   background: var(--color-background-secondary);
 
   p {
     margin: 0;
-    font-size: 13px;
-    color: var(--color-text-secondary);
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--color-text-tertiary);
+    font-style: italic;
+  }
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  .hero {
+    padding: 60px 24px 48px;
+    min-height: 68vh;
+  }
+
+  .placeholder {
+    padding: 40px 24px;
   }
 }

@@ -1,78 +1,80 @@
 /* ======================================================================
-   CLERC AG — global styles & design tokens
+   CLERC AG — global design tokens & base styles
+   Swiss Editorial direction: DM Serif Display / DM Sans
    ====================================================================== */
 
 :root {
-  /* fonts */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  /* typography */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* neutrals */
-  --color-background-primary: #ffffff;
-  --color-background-secondary: #fafafa;
-  --color-background-tertiary: #f4f4f4;
-  --color-text-primary: #1a1a1a;
-  --color-text-secondary: #666666;
-  --color-text-tertiary: #888888;
-  --color-border-tertiary: #e8e8e8;
-  --color-border-secondary: #d4d4d4;
+  --color-background-primary: #f7f6f3;
+  --color-background-secondary: #eeede9;
+  --color-background-tertiary: #e4e2dc;
+  --color-surface-dark: #141210;
+  --color-text-primary: #141210;
+  --color-text-secondary: #5a5751;
+  --color-text-tertiary: #918d87;
+  --color-border-subtle: rgba(20, 18, 16, 0.08);
+  --color-border-mid: rgba(20, 18, 16, 0.14);
 
   /* radii */
-  --border-radius-sm: 4px;
+  --border-radius-sm: 3px;
   --border-radius-md: 6px;
-  --border-radius-lg: 10px;
+  --border-radius-lg: 12px;
 
   /* default theme (Gruppe / neutral) */
-  --c-primary: #1a1a1a;
-  --c-accent: #1a1a1a;
-  --c-accent-light: #f0f0f0;
-  --c-accent-mid: #555555;
+  --c-primary: #141210;
+  --c-accent: #3d3a35;
+  --c-accent-light: #e8e6e1;
 
-  /* per-division static colors — canonical values taken from the brand SVGs.
-     Used wherever all three divisions appear together (landing cards, footer tags). */
-  --c-bau: #11214f;
-  --c-bau-secondary: #213a89; 
-  --c-bau-light: #e6ecf7;
-  --c-beton: #00595c;
+  /* per-division canonical colors */
+  --c-bau:           #11214f;
+  --c-bau-secondary: #213a89;
+  --c-bau-light:     #e8edf8;
+  --c-beton:         #00595c;
   --c-beton-secondary: #00aaaf;
-  --c-beton-light: #e0f5f6;
-  --c-heim: #6b0e12;
+  --c-beton-light:   #e0f4f5;
+  --c-heim:          #6b0e12;
   --c-heim-secondary: #c4161d;
-  --c-heim-light: #fde6e7;
+  --c-heim-light:    #fce8e9;
 
-  --transition: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* texture overlay — subtle concrete noise */
+  --texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
 }
 
-/* per-division accent themes — applied on the app root.
-   Accent matches the brand SVG fill exactly; primary is a darker shade for hero/contact
-   backgrounds. */
 .theme-bau {
   --c-primary: #11214f;
-  --c-accent: #213a89;
-  --c-accent-light: #e6ecf7;
+  --c-accent:  #213a89;
+  --c-accent-light: #e8edf8;
 }
 
 .theme-beton {
   --c-primary: #00595c;
-  --c-accent: #00aaaf;
-  --c-accent-light: #e0f5f6;
+  --c-accent:  #00aaaf;
+  --c-accent-light: #e0f4f5;
 }
 
 .theme-heim {
   --c-primary: #6b0e12;
-  --c-accent: #c4161d;
-  --c-accent-light: #fde6e7;
+  --c-accent:  #c4161d;
+  --c-accent-light: #fce8e9;
 }
 
-* {
+/* ── Reset ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--color-text-primary);
   background: var(--color-background-primary);
   -webkit-font-smoothing: antialiased;
@@ -88,4 +90,26 @@ a {
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+/* ── Typography helpers ─────────────────────────────────────────────── */
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+/* ── Keyframe animations ─────────────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }

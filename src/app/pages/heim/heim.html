@@ -1,20 +1,17 @@
 <section class="hero">
   <div class="hero-bg-text" aria-hidden="true">HEIM</div>
   <div class="hero-eyebrow">
-    {{ theme.config().fullName }} · <span class="accent">{{ theme.config().tagline }}</span>
+    {{ 'divisions.heim.fullName' | translate }} · <span class="accent">{{ 'divisions.heim.tagline' | translate }}</span>
   </div>
-  <h1>Ihr Zuhause.<br>Geplant.<br>Gebaut.</h1>
-  <p class="slogan"><em>...</em>Ihre Partner am Bau</p>
-  <p class="lead">
-    Das eigene Heim ist der grösste Traum. Wir begleiten Sie von der ersten Idee bis zur
-    Schlüsselübergabe.
-  </p>
+  <h1>{{ 'heim.hero.h1Line1' | translate }}<br />{{ 'heim.hero.h1Line2' | translate }}<br />{{ 'heim.hero.h1Line3' | translate }}</h1>
+  <p class="slogan"><em>...</em>{{ 'heim.hero.slogan' | translate }}</p>
+  <p class="lead">{{ 'heim.hero.lead' | translate }}</p>
   <div class="hero-ctas">
-    <a class="btn-primary" href="#kontakt">Traum besprechen</a>
-    <a class="btn-ghost" href="#angebot">Leistungen</a>
+    <a class="btn-primary" href="#kontakt">{{ 'heim.hero.ctaPrimary' | translate }}</a>
+    <a class="btn-ghost" href="#angebot">{{ 'heim.hero.ctaGhost' | translate }}</a>
   </div>
 </section>
 
 <section class="placeholder">
-  <p>Inhalt folgt — Angebot, Über uns, Referenzen, Stellen.</p>
+  <p>{{ 'heim.placeholder' | translate }}</p>
 </section>

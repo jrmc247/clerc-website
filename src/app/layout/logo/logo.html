@@ -1,10 +1,10 @@
 <a class="logo" routerLink="/" aria-label="CLERC AG — Startseite">
-  <span class="layer layer-text" [class.active]="isActive('home')" aria-hidden="true">
+  <span class="layer layer-text" [class.active]="current() === 'home'" aria-hidden="true">
     CLERC <sub>AG</sub>
   </span>
 
   @for (d of divisions(); track d.key) {
-    <span class="layer layer-image" [class.active]="isActive(d.key)" aria-hidden="true">
+    <span class="layer layer-image" [class.active]="current() === d.key" aria-hidden="true">
       <img [src]="d.logo" [alt]="d.fullName" width="44" height="40" loading="eager" />
     </span>
   }

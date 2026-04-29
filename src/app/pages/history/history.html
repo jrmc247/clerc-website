@@ -1,5 +1,5 @@
 <section class="history">
-  <div class="history-eyebrow">Unsere Geschichte</div>
+  <div class="history-eyebrow">{{ 'history.eyebrow' | translate }}</div>
   <ol class="timeline">
     @for (m of milestones; track m.year; let last = $last) {
       <li class="milestone" [class.last]="last">

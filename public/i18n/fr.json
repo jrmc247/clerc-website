@@ -1,0 +1,116 @@
+{
+  "lang": {
+    "de": "DE",
+    "fr": "FR"
+  },
+  "nav": {
+    "switcherLabel": "Choisir le domaine",
+    "links": {
+      "offer": "Prestations",
+      "about": "À propos",
+      "contact": "Contact",
+      "jobs": "Emplois"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} CLERC AG · Guin · Fribourg"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Clerc AG · Guin · Depuis 1947",
+      "eyebrowHighlight": "Trois domaines",
+      "h1Line1": "Planifier.",
+      "h1Line2": "Construire.",
+      "h1Line3": "Réaliser.",
+      "slogan": "...Vos partenaires dans la construction",
+      "lead": "Depuis 77 ans, nous réalisons des projets de construction de qualité dans le canton de Fribourg — de la planification à la remise des clés, à travers trois entreprises spécialisées.",
+      "ctaPrimary": "Choisir un domaine",
+      "ctaGhost": "Contact",
+      "stats": {
+        "years": "ans d'expérience",
+        "divisions": "domaines",
+        "staff": "collaborateurs"
+      }
+    }
+  },
+  "bau": {
+    "hero": {
+      "h1Line1": "Gros et",
+      "h1Line2": "génie civil.",
+      "h1Line3": "Avec expertise.",
+      "slogan": "...Vos partenaires dans la construction",
+      "lead": "De la fouille de fondation jusqu'au faîte — CLERC bau AG réalise votre projet de construction avec savoir-faire et passion.",
+      "ctaPrimary": "Demander une offre",
+      "ctaGhost": "Prestations"
+    },
+    "placeholder": "Contenu à venir — Prestations, À propos, Références, Emplois."
+  },
+  "beton": {
+    "hero": {
+      "h1Line1": "Forer.",
+      "h1Line2": "Découper.",
+      "h1Line3": "Avec précision.",
+      "slogan": "...Vos partenaires dans la construction",
+      "lead": "Carottage, sciage mural, sciage au fil — CLERC beton-trenn AG est votre spécialiste pour tous les travaux de découpe du béton.",
+      "ctaPrimary": "Demander une offre",
+      "ctaGhost": "Prestations"
+    },
+    "placeholder": "Contenu à venir — Prestations, À propos, Références, Emplois."
+  },
+  "heim": {
+    "hero": {
+      "h1Line1": "Votre chez-vous.",
+      "h1Line2": "Planifié.",
+      "h1Line3": "Construit.",
+      "slogan": "...Vos partenaires dans la construction",
+      "lead": "Posséder sa propre maison est le plus grand rêve. Nous vous accompagnons de la première idée à la remise des clés.",
+      "ctaPrimary": "Discuter de votre projet",
+      "ctaGhost": "Prestations"
+    },
+    "placeholder": "Contenu à venir — Prestations, À propos, Références, Emplois."
+  },
+  "cards": {
+    "cta": "Voir la page",
+    "bau": {
+      "services": ["Gros œuvre", "Génie civil", "Rénovations", "Aménagement extérieur"]
+    },
+    "beton": {
+      "services": ["Carottage", "Sciage", "Sciage au fil", "Déconstruction"]
+    },
+    "heim": {
+      "services": ["Planification", "Construction neuve", "Conseil & planification", "Réalisation"]
+    }
+  },
+  "history": {
+    "eyebrow": "Notre histoire",
+    "milestones": [
+      { "year": "1947", "label": "Fondation" },
+      { "year": "1968", "label": "2e génération" },
+      { "year": "1980s", "label": "60 collaborateurs" },
+      { "year": "2001", "label": "3e génération" },
+      { "year": "Aujourd'hui", "label": "Digital & moderne" }
+    ]
+  },
+  "divisions": {
+    "home": {
+      "label": "Groupe",
+      "fullName": "CLERC AG",
+      "tagline": "Trois domaines"
+    },
+    "bau": {
+      "label": "bau",
+      "fullName": "CLERC bau AG",
+      "tagline": "gros & génie civil"
+    },
+    "beton": {
+      "label": "beton-trenn",
+      "fullName": "CLERC beton-trenn AG",
+      "tagline": "forer - découper"
+    },
+    "heim": {
+      "label": "eigenheim",
+      "fullName": "CLERC eigenheim AG",
+      "tagline": "planifier - réaliser"
+    }
+  }
+}

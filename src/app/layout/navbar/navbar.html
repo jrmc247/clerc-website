@@ -5,49 +5,37 @@
 
   <span class="nav-divider" aria-hidden="true"></span>
 
-  <div class="switcher" role="tablist" aria-label="Fachbereich wählen">
+  <div class="switcher" role="tablist" [attr.aria-label]="'nav.switcherLabel' | translate">
     <a
       class="sw-btn"
-      [class.active]="current === 'home'"
-      routerLink="/"
+      [class.active]="current === home.key"
+      [routerLink]="home.route"
       role="tab"
-      [attr.aria-selected]="current === 'home'"
+      [attr.aria-selected]="current === home.key"
     >
-      Gruppe
+      {{ 'divisions.home.label' | translate }}
     </a>
-    <a
-      class="sw-btn bau"
-      [class.active]="current === 'bau'"
-      [routerLink]="divisions.bau.route"
-      role="tab"
-      [attr.aria-selected]="current === 'bau'"
-    >
-      bau
-    </a>
-    <a
-      class="sw-btn beton"
-      [class.active]="current === 'beton'"
-      [routerLink]="divisions.beton.route"
-      role="tab"
-      [attr.aria-selected]="current === 'beton'"
-    >
-      beton-trenn
-    </a>
-    <a
-      class="sw-btn heim"
-      [class.active]="current === 'heim'"
-      [routerLink]="divisions.heim.route"
-      role="tab"
-      [attr.aria-selected]="current === 'heim'"
-    >
-      eigenheim
-    </a>
+
+    @for (div of divisionTabs; track div.key) {
+      <a
+        class="sw-btn"
+        [class.active]="current === div.key"
+        [attr.data-key]="div.key"
+        [routerLink]="div.route"
+        role="tab"
+        [attr.aria-selected]="current === div.key"
+      >
+        {{ 'divisions.' + div.key + '.label' | translate }}
+      </a>
+    }
   </div>
 
   <div class="nav-links">
-    <a href="#angebot">Angebot</a>
-    <a href="#ueber-uns">Über uns</a>
-    <a href="#kontakt">Kontakt</a>
-    <a href="#stellen">Stellen</a>
+    <a href="#angebot">{{ 'nav.links.offer' | translate }}</a>
+    <a href="#ueber-uns">{{ 'nav.links.about' | translate }}</a>
+    <a href="#kontakt">{{ 'nav.links.contact' | translate }}</a>
+    <a href="#stellen">{{ 'nav.links.jobs' | translate }}</a>
   </div>
+
+  <app-lang-switcher />
 </nav>

@@ -1,12 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { ThemeService } from '../../core/theme.service';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslatePipe } from '../../core/translate.pipe';
 
 @Component({
   selector: 'app-bau',
+  imports: [TranslatePipe],
   templateUrl: './bau.html',
   styleUrls: ['../_division.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BauPage {
-  protected readonly theme = inject(ThemeService);
-}
+export class BauPage {}

@@ -3,14 +3,14 @@
     @let div = divisions[card.key];
     <a class="lc" [class]="'lc-' + card.key" [routerLink]="div.route">
       <span class="lc-stripe"></span>
-      <div class="lc-name">{{ div.fullName }}</div>
-      <div class="lc-sub">{{ div.tagline }}</div>
+      <div class="lc-name">{{ 'divisions.' + card.key + '.fullName' | translate }}</div>
+      <div class="lc-sub">{{ 'divisions.' + card.key + '.tagline' | translate }}</div>
       <ul class="lc-services">
         @for (s of card.services; track s) {
-          <li>{{ s }}</li>
+          <li>{{ s | translate }}</li>
         }
       </ul>
-      <div class="lc-cta">Zur Seite <span class="lc-arrow">→</span></div>
+      <div class="lc-cta">{{ 'cards.cta' | translate }} <span class="lc-arrow">→</span></div>
     </a>
   }
 </section>

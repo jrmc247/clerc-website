@@ -1,30 +1,27 @@
 <section class="hero">
   <div class="hero-bg-text" aria-hidden="true">CLERC</div>
   <div class="hero-eyebrow">
-    Clerc AG · Düdingen · Seit 1947 — <span class="accent">Drei Fachbereiche</span>
+    {{ 'home.hero.eyebrow' | translate }} — <span class="accent">{{ 'home.hero.eyebrowHighlight' | translate }}</span>
   </div>
-  <h1>Planen.<br />Bauen.<br />Realisieren.</h1>
-  <p class="slogan"><em>...</em>Ihre Partner am Bau</p>
-  <p class="lead">
-    Seit 77 Jahren realisieren wir hochwertige Bauprojekte im Freiburgerland — von der Planung bis
-    zur Übergabe, über drei spezialisierte Fachbetriebe.
-  </p>
+  <h1>{{ 'home.hero.h1Line1' | translate }}<br />{{ 'home.hero.h1Line2' | translate }}<br />{{ 'home.hero.h1Line3' | translate }}</h1>
+  <p class="slogan"><em>...</em>{{ 'home.hero.slogan' | translate }}</p>
+  <p class="lead">{{ 'home.hero.lead' | translate }}</p>
   <div class="hero-ctas">
-    <a class="btn-primary" href="#fachbereiche">Bereich wählen</a>
-    <a class="btn-ghost" href="#kontakt">Kontakt</a>
+    <a class="btn-primary" href="#fachbereiche">{{ 'home.hero.ctaPrimary' | translate }}</a>
+    <a class="btn-ghost" href="#kontakt">{{ 'home.hero.ctaGhost' | translate }}</a>
   </div>
   <div class="hero-stats">
     <div>
       <div class="num">77</div>
-      <div class="lbl">Jahre Erfahrung</div>
+      <div class="lbl">{{ 'home.hero.stats.years' | translate }}</div>
     </div>
     <div>
       <div class="num">3</div>
-      <div class="lbl">Fachbereiche</div>
+      <div class="lbl">{{ 'home.hero.stats.divisions' | translate }}</div>
     </div>
     <div>
       <div class="num">30+</div>
-      <div class="lbl">Mitarbeitende</div>
+      <div class="lbl">{{ 'home.hero.stats.staff' | translate }}</div>
     </div>
   </div>
 </section>
