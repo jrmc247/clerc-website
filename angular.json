@@ -33,7 +33,12 @@
               "src/styles.scss"
             ],
             "server": "src/main.server.ts",
-            "outputMode": "server",
+            "outputMode": "static",
+            "outputPath": {
+              "base": "docs",
+              "browser": "",
+              "server": "server"
+            },
             "security": {
               "allowedHosts": []
             },

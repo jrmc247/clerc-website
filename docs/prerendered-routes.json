@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "/clerc-website": {},
+    "/clerc-website/bau": {},
+    "/clerc-website/bau/angebot": {},
+    "/clerc-website/bau/referenzen": {},
+    "/clerc-website/beton-trenn": {},
+    "/clerc-website/beton-trenn/angebot": {},
+    "/clerc-website/beton-trenn/referenzen": {},
+    "/clerc-website/eigenheim": {},
+    "/clerc-website/eigenheim/angebot": {},
+    "/clerc-website/eigenheim/bauland": {},
+    "/clerc-website/eigenheim/finanzierung": {},
+    "/clerc-website/eigenheim/ideenhaeuser": {},
+    "/clerc-website/eigenheim/projekte": {},
+    "/clerc-website/eigenheim/referenzen": {},
+    "/clerc-website/eigenheim/team": {}
+  }
+}

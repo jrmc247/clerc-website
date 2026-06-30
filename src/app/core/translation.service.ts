@@ -14,6 +14,7 @@ export class TranslationService {
   private readonly http = inject(HttpClient);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
+  private readonly base: string;
 
   private readonly _lang = signal<Lang>(DEFAULT_LANG);
   private readonly _translations = signal<Record<string, unknown>>({});
@@ -23,6 +24,10 @@ export class TranslationService {
   readonly ready = this._ready.asReadonly();
 
   constructor() {
+    const base = this.isBrowser
+      ? (document.querySelector('base')?.getAttribute('href') ?? '/')
+      : '/';
+    this.base = base.replace(/\/$/, '');
     effect(() => {
       const l = this._lang();
       if (this.isBrowser) {
@@ -34,7 +39,8 @@ export class TranslationService {
   }
 
   async init(): Promise<void> {
-    const stored = this.isBrowser ? localStorage.getItem(STORAGE_KEY) : null;
+    if (!this.isBrowser) return;
+    const stored = localStorage.getItem(STORAGE_KEY);
     const initial = this.isSupported(stored) ? stored : DEFAULT_LANG;
     await this.load(initial);
   }
@@ -44,7 +50,6 @@ export class TranslationService {
     await this.load(lang);
   }
 
-  /** Resolve a dot-notation key, with optional interpolation of {placeholder} tokens. */
   translate(key: string, params?: Record<string, string | number>): string {
     const raw = this.resolve(key, this._translations());
     if (typeof raw !== 'string') return key;
@@ -53,7 +58,7 @@ export class TranslationService {
   }
 
   private async load(lang: Lang): Promise<void> {
-    const data = await firstValueFrom(this.http.get<Record<string, unknown>>(`/i18n/${lang}.json`));
+    const data = await firstValueFrom(this.http.get<Record<string, unknown>>(`${this.base}/i18n/${lang}.json`));
     this._translations.set(data);
     this._lang.set(lang);
     this._ready.set(true);
